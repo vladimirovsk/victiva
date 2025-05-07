@@ -29,7 +29,7 @@ export default function RootLayout({
 		<html lang="ru">
 		<body>
 			<HeaderPage/>
-			<Container component="main" className={'mainContainer'}>
+			<Container component="main" className={'mainContainer'} maxWidth={false}>
 				{children}
 			</Container>
 		</body>

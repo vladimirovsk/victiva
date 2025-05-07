@@ -4,6 +4,43 @@
 
 /* Custom styles can be added below */
 
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
 .mainContainer {
     padding-top: 64px;
+    width: 100%;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.titlePageCurs {
+    margin: 0px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    justify-content: center;
+    color: #FFD700;
+}
+
+.titlePageCursWhiteText{
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
+    color: #FFF !important;
+}
+
+.pageHome {
+    /*width: 100%;*/
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: arial black, arial-w01-black,arial-w02-black,arial-w10 black,sans-serif;
+    font-weight:700;
+    color: #FFD700;
 }

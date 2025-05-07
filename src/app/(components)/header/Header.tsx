@@ -7,16 +7,31 @@ import Image from 'next/image';
 
 export default function Header() {
 	const navItems = useMemo(() => [
-		{ key: 'curse', caption: 'Курс'},
+		{ key: 'curs', caption: 'Курс'},
 		{ key: 'coaching', caption: 'Coaching'},
 		{ key: 'free', caption: 'Бесплатно'},
-		{ key: 'forUser', caption: 'Для членов'},
-		{ key: 'more', caption: 'Больше'},
+		{ key: 'connect', caption: 'Связаться'},
 	], []);
 
 	const handleNavItemClick = (item:string, e: React.MouseEvent)=> {
 		if (e) {
 			e.preventDefault();
+			const element = document.getElementById(item);
+			if (element) {
+				// Get the height of the AppBar
+				const appBar = document.querySelector('.appBarHeader') as HTMLElement;
+				const appBarHeight = appBar ? appBar.offsetHeight : 0;
+
+				// Calculate the element's position and adjust for the AppBar height
+				const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+				const offsetPosition = elementPosition - appBarHeight;
+
+				// Scroll to the adjusted position
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth'
+				});
+			}
 		}
 	}
 	return (
@@ -28,12 +43,18 @@ export default function Header() {
 			<Container fixed >
 				<Toolbar>
 					<Box sx={{ display: 'flex', alignItems: 'center' }}>
-						<Image
-							src={imageLogo}
-							alt='VICTIVA'
-							className="header-logo"
-							width='60'
-						/>
+						<a 
+							href="#home" 
+							onClick={(e) => handleNavItemClick('home', e)}
+							style={{ cursor: 'pointer' }}
+						>
+							<Image
+								src={imageLogo}
+								alt='VICTIVA'
+								className="header-logo"
+								width='60'
+							/>
+						</a>
 					</Box>
 					<Box className="header-nav-box" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexGrow: 1 }}>
 						{navItems.map((item) => (
@@ -43,6 +64,7 @@ export default function Header() {
 								onClick={(e) => handleNavItemClick(item.key, e)}
 								href={`#${item.key.toLowerCase()}`}
 								component="a"
+								sx={{ textTransform: 'none', color: 'black', fontSize: '1.1rem' }}
 							>
 								{item.caption}
 							</Button>
