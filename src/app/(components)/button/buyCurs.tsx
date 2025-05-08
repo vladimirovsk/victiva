@@ -1,25 +1,39 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-interface BuyCursButtonProps {
-  onClick?: () => void;
+export enum EColorButton {
+    gold= '#FFD700',
+    white = '#FFF',
+    black = '#000'
 }
 
-export default function BuyCursButton({ onClick }: BuyCursButtonProps) {
+interface BuyCursButtonProps {
+  onClick?: () => void;
+  caption?: string;
+  bgColor?: EColorButton
+  fontColor? :EColorButton
+}
+
+export default function BuyCursButton({
+  onClick,
+  caption='Купить курс',
+  bgColor=EColorButton.gold,
+  fontColor=EColorButton.black
+}: BuyCursButtonProps) {
   return (
     <Button
       variant="contained"
       onClick={onClick}
       style={{
-        backgroundColor: '#FFD700',
-        color: '#000',
+        backgroundColor: bgColor,
+        color: fontColor,
         fontWeight: 'bold',
         margin: '40px',
-        fontSize: '1.2rem'
+        fontSize: '1.3rem'
       }}
       sx={{ textTransform: 'none' }}
     >
-      Купить курс
+        {caption}
     </Button>
   );
 }
