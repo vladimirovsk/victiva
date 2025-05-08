@@ -108,7 +108,7 @@
       <workItem from="1746588058925" duration="331000" />
       <workItem from="1746588400590" duration="3635000" />
       <workItem from="1746632680516" duration="15859000" />
-      <workItem from="1746652716824" duration="7881000" />
+      <workItem from="1746652716824" duration="8209000" />
     </task>
     <servers />
   </component>
@@ -139,12 +139,6 @@
           <line>41</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/(site)/coaching/page.tsx</url>
-          <line>85</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

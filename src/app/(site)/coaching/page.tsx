@@ -64,37 +64,35 @@ export default function Coaching() {
 				// margin: '0px 0'
 			}}>
 			<BuyCursButton caption = 'Записаться' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
-			<div style={{
-				left: 0,
-				top:0,
-				display: 'flex',
-				alignItems: 'left',
-				justifyContent: 'left',
-				fontSize: '2.5rem',
-				fontWeight: 'bold',
-			}}>
 				<div style={{
-					left:0,
-					position: 'relative',
-					color: 'black',
-					margin: '0px',
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+					fontSize: '2.5rem',
+					fontWeight: 'bold',
+					margin: '20px 0'
 				}}>
-					$697 -
-					<img
-						src={redX.src}
-						alt="crossed out"
-						style={{
-							position: 'absolute',
-							top: 0,
-							left: 0,
-							width: '100%',
-							height: '100%',
-							objectFit: 'contain'
-						}}
-					/>
+					<div style={{
+						position: 'relative',
+						color: 'black',
+						marginRight: '10px'
+					}}>
+						$697 -
+						<img
+							src={redX.src}
+							alt="crossed out"
+							style={{
+								position: 'absolute',
+								top: 0,
+								left: 0,
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain'
+							}}
+						/>
+					</div>
+					<div style={{ color: 'red' }}>$397</div>
 				</div>
-				<div style={{ color: 'red' }}> $397</div>
-			</div>
 			</Grid>
 		</div>
 	)
