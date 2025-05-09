@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd5ee13-6ce1-41c0-a53b-74791b25b255" name="Changes" comment="added new blocks">
-      <change afterPath="$PROJECT_DIR$/public/videos/file.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/coaching-section1.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/images/victiva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos.d.ts" afterDir="false" />
+    <list default="true" id="2cd5ee13-6ce1-41c0-a53b-74791b25b255" name="Changes" comment="added new accordions">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(components)/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(components)/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/coaching/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/coaching/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/connect/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/connect/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/curs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/curs/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/file.mp4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/free/free.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/free/free.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +105,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.109" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.109" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -147,6 +133,7 @@
       <workItem from="1746726774890" duration="10174000" />
       <workItem from="1746750145716" duration="6987000" />
       <workItem from="1746808483381" duration="8214000" />
+      <workItem from="1746816906663" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="change workspace">
       <option name="closed" value="true" />
@@ -164,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746749043856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added new accordions">
+      <option name="closed" value="true" />
+      <created>1746817147884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746817147884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change workspace" />
     <MESSAGE value="added new blocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new blocks" />
+    <MESSAGE value="added new accordions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new accordions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -210,8 +206,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/(site)/connect/page.tsx</url>
-          <line>138</line>
-          <properties lambdaOrdinal="-1" />
+          <line>135</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
