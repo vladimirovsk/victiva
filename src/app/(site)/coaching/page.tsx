@@ -1,20 +1,21 @@
-import { Grid } from "@mui/material";
+import {Box, Grid} from "@mui/material";
 import leftImage1 from "./images/left1.png";
 import vipImage from "./images/vip.png";
 import mv2 from "./images/mv2.gif";
-import videoFile from "../../../../videos/file.mp4";
+// import videoFile from "public/videos/file.mp4";
 
 import BuyCursButton, { EColorButton } from "../../(components)/button/buyCurs";
 import Vik from "../../(components)/vic/vik";
 import NewPrice from "../../(components)/new-price/new-price";
 import MessageSvg from "../../(components)/message-svg/message-svg";
-
-import Video from "next-video";
+import CoachingSection1 from '@/src/app/(site)/coaching/coaching-section1';
 
 
 
 export default function Coaching() {
 	return (
+		<div>
+			<CoachingSection1 />
 		<div id="coaching" className={'titlePageCoaching'}>
 			{/*1*************/}
 			<Grid container spacing={3} columns={12} direction="row"
@@ -234,7 +235,7 @@ export default function Coaching() {
 			}}>
 				<Grid key={1} size={{lg: 6, md: 6, sm: 6, xs: 6}} style={{
 				}}><div style={{
-					margin: '0',
+					marginLeft: '0px',
 					display: 'flex',
 					justifyContent: 'flex-end',
 					position: 'relative',
@@ -242,27 +243,43 @@ export default function Coaching() {
 				}}>
 					<MessageSvg />
 				</div>
-
-
 				</Grid>
 				<Grid key={2} size={{lg: 6, md: 6, sm: 6, xs: 6}}>
-					2
+
 				</Grid>
-				<Grid key={3} size={{lg: 6, md: 6, sm: 6, xs: 6}}>
-					{/*<Video src={videoFile} />*/}
-					{/*<video src={videoFile} controls style={{width: '100%'}}></video>*/}
+				<Grid key={3} size={{lg: 6, md: 6, sm: 6, xs: 6}} style={{
+					top: '1rem',
+					// margin: '0px',
+					// marginLeft: '20px',
+					display: 'flex',
+					justifyContent: 'center',
+					position: 'relative',
+					zIndex: 1,
+				}}>
+					<video src="videos/file.mp4" controls style={{ width: '50%' }} >
+						Your browser does not support the video tag.
+					</video>
 				</Grid>
 				<Grid key={4} size={{lg: 6, md: 6, sm: 6, xs: 6}}>
 					<img src={mv2.src} style={{
 						// position: 'absolute',
 						top: 0,
-						left: 0,
+						// left: '20px',
 						width: '200px',
 						objectFit: 'contain'
 					}}></img>
 				</Grid>
+
 			</Grid>
 
+		</div>
+			<Box style={{
+				alignItems: 'center',
+				justifyContent: 'center',
+				textAlign: 'center',
+			}}>
+			<BuyCursButton />
+			</Box>
 		</div>
 	)
 }

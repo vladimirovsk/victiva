@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 import homeImageCurs from "../../../../public/homeImage.png";
-import redX from "../../../../public/red-x.svg";
 import BuyCursButton from "../../(components)/button/buyCurs";
 import NewPrice from "../../(components)/new-price/new-price";
 
@@ -90,15 +89,16 @@ export default function Curs() {
 						alignItems: 'left',
 						justifyContent: 'left',
 						textAlign: 'left',
-						marginBottom: '20px'
+						marginBottom: '20px',
 					}}>
 						<div style={{
 							alignItems: 'center',
 							justifyContent: 'center',
 							textAlign: 'center',
-							marginBottom:'30px -'
+							marginBottom:'30px',
+							lineHeight: 1.6,
 						}}>30 ДНЕВНАЯ ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</div>
-						<div>Если вы пробовали проходить курс и вам по любой причине он
+						<div style={{lineHeight: 1.6}}>Если вы пробовали проходить курс и вам по любой причине он
 							не подошел, вам деньги возвращаються в течение
 							первых 30 дней. Настолько я уверен что этот курс это билет
 							к жизни которую вы желаете!</div>

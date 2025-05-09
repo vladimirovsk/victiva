@@ -8,9 +8,9 @@ export default function Home() {
   return (
      <div>
         <HomePage/>
+        <Free />
         <Curs/>
         <Coaching/>
-        <Free />
         <Connect/>
      </div>
     )

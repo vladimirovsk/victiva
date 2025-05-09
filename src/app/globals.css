@@ -89,3 +89,28 @@ html {
 #comp-lzj1loyg tspan {
     text-anchor: start;
 }
+
+.accordion {
+    cursor: pointer;
+    /*padding: 1rem;*/
+    /*padding: 18px;*/
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+.accordion-summary {
+    background-color: #1c1c1c;
+    color: white;
+    justify-content: left;
+}
+
+.accordion-details {
+    background-color: #1c1c1c;
+}
+
+.title-accordion {
+    font-size: 15px;
+}

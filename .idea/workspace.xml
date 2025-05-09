@@ -5,31 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cd5ee13-6ce1-41c0-a53b-74791b25b255" name="Changes" comment="added new blocks">
-      <change afterPath="$PROJECT_DIR$/.idea/VICTIV.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(components)/message-svg/message-svg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(components)/new-price/new-price.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(components)/vic/vik.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/images/mv2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/images/vip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/curs/images/excelent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/media.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos/file.mp4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/file.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/coaching-section1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/coaching/images/victiva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/coaching/images/red-x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(components)/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(components)/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/coaching/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/coaching/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/connect/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/connect/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/curs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/curs/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/home/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/home/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/file.mp4.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,36 +53,40 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/s.vladimirov/Project/VICTIV/videos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.tailwindcss",
-    "ts.external.directory.path": "/Users/s.vladimirov/Project/VICTIV/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/s.vladimirov/Project/VICTIV/public/videos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/s.vladimirov/Project/VICTIV/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/videos" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/videos" />
       <recent name="$PROJECT_DIR$/src/app/(site)/coaching/images" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(site)/coaching/images" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -148,7 +144,9 @@
       <workItem from="1746716617175" duration="104000" />
       <workItem from="1746717772789" duration="118000" />
       <workItem from="1746719398565" duration="5861000" />
-      <workItem from="1746726774890" duration="8866000" />
+      <workItem from="1746726774890" duration="10174000" />
+      <workItem from="1746750145716" duration="6987000" />
+      <workItem from="1746808483381" duration="8214000" />
     </task>
     <task id="LOCAL-00001" summary="change workspace">
       <option name="closed" value="true" />
@@ -158,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746671199641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added new blocks">
+      <option name="closed" value="true" />
+      <created>1746749043856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746749043856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,12 +180,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/(components)/header/Header.tsx</url>
-          <line>49</line>
+          <line>116</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/(site)/curs/page.tsx</url>
-          <line>29</line>
+          <line>28</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -189,20 +195,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/(site)/coaching/page.tsx</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/(site)/coaching/page.tsx</url>
-          <line>57</line>
-          <properties lambdaOrdinal="-1" />
+          <line>58</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/next.config.ts</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
+          <line>16</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/(site)/connect/page.tsx</url>
+          <line>138</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
