@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import homeImageCurs from "../../../../public/homeImage.png";
 import redX from "../../../../public/red-x.svg";
 import BuyCursButton from "../../(components)/button/buyCurs";
+import NewPrice from "../../(components)/new-price/new-price";
 
 export default function Curs() {
 	return (
@@ -23,35 +24,8 @@ export default function Curs() {
 				<img src={homeImageCurs.src} className="mx-auto w-3/5"
 					style={{margin: 40}} alt="homeImage"
 				/>
-				<div style={{
-					display: 'flex',
-					alignItems: 'center',
-					justifyContent: 'center',
-					fontSize: '2.5rem',
-					fontWeight: 'bold',
-					margin: '20px 0'
-				}}>
-					<div style={{ 
-						position: 'relative', 
-						color: 'white',
-						marginRight: '10px'
-					}}>
-						$299 -
-						<img 
-							src={redX.src} 
-							alt="crossed out" 
-							style={{
-								position: 'absolute',
-								top: 0,
-								left: 0,
-								width: '100%',
-								height: '100%',
-								objectFit: 'contain'
-							}}
-						/>
-					</div>
-					<div style={{ color: 'red' }}>$49</div>
-				</div>
+
+				<NewPrice oldParam={{value: 299, color: 'white'} } newParam={{value: 49, color: 'red'}} />
 				<BuyCursButton />
 			<div className={'titlePageCursWhiteText'}>
 				<div style={{ marginBottom: '10px' }}>"ЭТОТ ВИДЕО КУРС ПОМОГ МНЕ ЛУЧШЕ ЧЕМ</div>

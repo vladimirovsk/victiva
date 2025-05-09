@@ -28,6 +28,7 @@ html {
     color: #FFD700;
 }
 
+
 .titlePageCursWhiteText{
     font-size: 1.3rem;
     text-align: center;
@@ -43,4 +44,48 @@ html {
     font-family: arial black, arial-w01-black,arial-w02-black,arial-w10 black,sans-serif;
     font-weight:700;
     color: #FFD700;
+}
+
+/*#comp-lzj1loyg {*/
+/*    width: 400px;*/
+/*    height: 279px;*/
+/*    --fill-opacity: 1;*/
+/*    --stroke-width: 4;*/
+/*    --stroke: #000000;*/
+/*    --stroke-opacity: 1;*/
+/*    --fill: #FFFFFF;*/
+/*    --svg-calculated-padding: 2px 2px 2px 2px;*/
+/*    --svg-calculated-width: calc(100% - 4px);*/
+/*    --svg-calculated-height: calc(100% - 4px);*/
+/*}*/
+#comp-lzj1loyg {
+    width: 400px;
+    height: 300px;
+    --fill-opacity: 1;
+    --stroke-width: 4;
+    --stroke: #000000;
+    --stroke-opacity: 1;
+    --fill: #FFFFFF;
+    --svg-calculated-padding: 2px 2px 2px 2px;
+    --svg-calculated-width: calc(100% - 4px);
+    --svg-calculated-height: calc(100% - 4px);
+}
+
+#comp-lzj1loyg svg path {
+    fill: var(--fill);
+    fill-opacity: var(--fill-opacity);
+    stroke: var(--stroke);
+    stroke-width: var(--stroke-width);
+    stroke-opacity: var(--stroke-opacity);
+}
+
+#comp-lzj1loyg text {
+    fill: #000000;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+#comp-lzj1loyg tspan {
+    text-anchor: start;
 }

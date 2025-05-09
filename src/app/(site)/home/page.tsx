@@ -38,6 +38,7 @@ export default function HomePage() {
 					<div style={{
 						fontSize: '32px',
 						marginTop: '30px',
+						textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
 					}}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>
 					<BuyCursButton />
 				</Grid>

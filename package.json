@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,9 +13,12 @@
     "@mui/material": "^7.1.0",
     "@mui/styled-engine-sc": "^7.1.0",
     "next": "15.3.2",
+    "next-video": "^2.2.0",
+    "next-videos": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "video-player": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
+    "file-loader": "^6.2.0",
     "tailwindcss": "^4.1.5",
     "typescript": "^5"
   }
