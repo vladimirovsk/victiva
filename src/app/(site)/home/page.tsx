@@ -9,6 +9,15 @@ export default function HomePage() {
 			id='home' 
 			style={{ 
 				backgroundImage: `url(${homeImage.src})`,
+				// backgroundSize: '100% auto',
+				// backgroundPosition: 'top center',
+				// backgroundRepeat: 'no-repeat',
+				// height: '100vh',
+				// width: '100%',
+				// display: 'flex',
+				// flexDirection: 'column',
+				// alignItems: 'center',
+				// justifyContent: 'center',
 			}}
 		>
 			<Grid
@@ -26,8 +35,9 @@ export default function HomePage() {
 				<Grid
 				      style={{
 					backgroundColor: 'rgba(0, 0, 0, 0.6)',
+			        marginTop: '15rem',
 					width: '350px',
-					// height: '250px',
+			        height: '250px',
 					display: 'flex',
 					flexDirection: 'column',
 					alignItems: 'center',

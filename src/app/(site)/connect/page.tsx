@@ -114,19 +114,19 @@ export default function Connect() {
 										}}
 				            >
 
-								<AccordionSummary className={'accordionSummary'}
+								<AccordionSummary key={`Summary-${item.id}`} className={'accordionSummary'}
 									expandIcon={<ExpandMoreIcon style={{color: 'white'}}/>}
 
 								>
-									<Typography component="span" className={'title-accordion'} style={{fontSize: '1.2rem'}}>
+									<Typography key={`Typography-${item.id}`} component="span" className={'title-accordion'} style={{fontSize: '1.2rem'}}>
 										{item.title}
 									</Typography>
 								</AccordionSummary>
-								<AccordionDetails style={{
+								<AccordionDetails key={`Details-${item.id}`} style={{
 									fontSize: '0.9rem', lineHeight: 1.5,
 								}}>
-									{item.details.map(row=>(
-										<div style={{marginBottom: '1rem'}}>{row}</div>
+									{item.details.map((row, index)=>(
+										<div key={`DetailsRow-${index}-${item.id}`} style={{marginBottom: '1rem'}}>{row}</div>
 									))}
 								</AccordionDetails>
 							</Accordion>

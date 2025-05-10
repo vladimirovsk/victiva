@@ -1,6 +1,8 @@
+@import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Custom styles can be added below */
 
@@ -20,7 +22,6 @@ html {
 }
 
 .titlePageCurs {
-    margin: 0px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
