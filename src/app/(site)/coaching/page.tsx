@@ -54,8 +54,8 @@ export default function Coaching() {
 				      margin: '20px 0',
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}}>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
+				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
 					<div style={{marginBottom: '10px'}}>✔ 8 занятий в группе через Zoom c Vic на 1 месяц</div>
 					<div style={{marginBottom: '10px'}}>✔ 2 раза в неделю по 75 минут</div>
 					<div style={{marginBottom: '10px'}}>✔ Vic будет поправлять ваше произношение лично</div>
@@ -65,7 +65,7 @@ export default function Coaching() {
 					<div style={{marginBottom: '10px'}}>✔ улучшить ваше амеркианское произношение</div>
 					<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
 				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
 			</Grid>
 			<Grid container spacing={0} style={{
 				alignItems: 'left',
@@ -85,7 +85,7 @@ export default function Coaching() {
 				      textAlign: 'center'
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}} style={{
 					backgroundImage: `url(${vipImage.src})`,
 					backgroundSize: '80%',
 					backgroundPosition: 'top center',
@@ -94,7 +94,7 @@ export default function Coaching() {
 					margin: '20px 0px 0px 0px',
 				}}>
 				</Grid>
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
+				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}} style={{
 					fontSize: '32px',
 					fontWeight: 'bold',
 
@@ -103,7 +103,7 @@ export default function Coaching() {
 					<div>1 ЗАНЯТИЕ 1 НА 1</div>
 					<div style={{marginBottom: '4rem'}}>C <Vik/></div>
 				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
 			</Grid>
 			<Grid container spacing={3} columns={12} direction="row"
 			      style={{
@@ -114,8 +114,8 @@ export default function Coaching() {
 				      margin: '20px 0',
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}}>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
+				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
 					<div style={{marginBottom: '10px'}}>✔ 1 приватное занятие c Vic один на один через
 						Telegram, WhatsApp или Zoom
 					</div>
@@ -125,7 +125,7 @@ export default function Coaching() {
 					</div>
 					<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
 				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
 			</Grid>
 			<Grid container spacing={0} style={{
 				alignItems: 'left',
@@ -153,8 +153,8 @@ export default function Coaching() {
 				      textAlign: 'center'
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}} />
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}} />
+				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}} style={{
 					fontSize: '32px',
 					fontWeight: 'bold',
 				}}>
@@ -163,7 +163,7 @@ export default function Coaching() {
 					<div style={{marginBottom: '1rem'}}>C <Vik/></div>
 					<div style={{marginBottom: '4rem'}}>(произношение + грамматика, слова)</div>
 				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
 			</Grid>
 			<Grid container spacing={3} columns={12} direction="row"
 			      style={{
@@ -174,8 +174,8 @@ export default function Coaching() {
 				      margin: '20px 0',
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}}>
+				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
+				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
 					<div style={{marginBottom: '1rem'}}>✔ 15 приватных занятий c Vic один на один через
 						Telegram, WhatsApp или Zoom
 					</div>
@@ -199,7 +199,7 @@ export default function Coaching() {
 						уровня и выше
 					</div>
 				</Grid>
-				<Grid size={{lg: 3, md: 3, sm: 0, xs: 0}}></Grid>
+				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}></Grid>
 			</Grid>
 			<Grid container spacing={0} columns={12} direction="row" style={{
 				alignItems: 'left',
@@ -208,7 +208,7 @@ export default function Coaching() {
 				// margin: '0px 0'
 			}}>
 				<Grid size={{lg: 3, md: 3, sm: 0, xs: 0}}></Grid>
-				<Grid size={{lg: 6, md: 6, sm: 0, xs: 0}}>
+				<Grid size={{lg: 6, md: 6, sm: 12, xs: 12}}>
 					<h1 style={{
 						display: 'flex',
 						alignItems: 'center',
@@ -231,7 +231,7 @@ export default function Coaching() {
 				margin: '0',
 				// border: '1px solid black', padding: '10px'
 			}}>
-				<Grid key={1} size={{lg: 6, md: 6, sm: 6, xs: 6}} style={{
+				<Grid key={1} size={{lg: 6, md: 6, sm: 10, xs: 10}} style={{
 				}}><div style={{
 					marginLeft: '0px',
 					display: 'flex',
@@ -242,10 +242,9 @@ export default function Coaching() {
 					<MessageSvg />
 				</div>
 				</Grid>
-				<Grid key={2} size={{lg: 6, md: 6, sm: 6, xs: 6}}>
-
+				<Grid key={2} size={{lg: 6, md: 6, sm: 1, xs: 1}}>
 				</Grid>
-				<Grid key={3} size={{lg: 6, md: 6, sm: 6, xs: 6}} style={{
+				<Grid key={3} size={{lg: 6, md: 6, sm: 10, xs: 10}} style={{
 					top: '1rem',
 					// margin: '0px',
 					// marginLeft: '20px',
@@ -254,7 +253,7 @@ export default function Coaching() {
 					position: 'relative',
 					zIndex: 1,
 				}}>
-					<video src="videos/file.mp4" controls style={{ width: '50%' }} >
+					<video src="videos/file.mp4" controls style={{ width: '400px' }} >
 						Your browser does not support the video tag.
 					</video>
 				</Grid>

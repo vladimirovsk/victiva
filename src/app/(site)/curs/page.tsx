@@ -20,8 +20,11 @@ export default function Curs() {
 				<div style={{ marginBottom: '10px' }}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>
 				<div style={{ marginBottom: '10px' }}>БАЗОВЫЙ ПАКЕТ</div>
 				</h1>
-				<img src={homeImageCurs.src} className="mx-auto w-3/5"
-					style={{margin: 40}} alt="homeImage"
+				<img src={homeImageCurs.src} className="mx-auto"
+					style={{
+						margin: 40,
+						width: '70%',
+				}} alt="homeImage"
 				/>
 
 				<NewPrice oldParam={{value: 299, color: 'white'} } newParam={{value: 49, color: 'red'}} />
