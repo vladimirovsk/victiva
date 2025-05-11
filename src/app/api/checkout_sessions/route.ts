@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
             product_data: {
               name: 'Ваша услуга',
             },
-            unit_amount: body.value
+            unit_amount: value,
           },
           quantity: 1,
         },
@@ -32,12 +32,13 @@ export async function POST(request: NextRequest) {
       cancel_url: `${origin}/cancel`,
     });
 
+    console.log('Session created:', session.id);
     return NextResponse.json({ id: session.id });
   } catch (error) {
     console.error('Error creating checkout session:', error);
     return NextResponse.json(
-      { error: 'Error creating checkout session' },
-      { status: 500 }
+        { error: 'Error creating checkout session' },
+        { status: 500 }
     );
   }
 }
