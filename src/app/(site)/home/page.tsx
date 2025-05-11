@@ -1,8 +1,9 @@
 import { Grid } from "@mui/material";
 import homeImage from "../../../../public/homeImage.png";
-import BuyCursButton from "../../(components)/button/buyCurs";
+import StripeButton from "../../(components)/button/stripeButton";
 
 export default function HomePage() {
+
 	return (
 		<div 
 			className="pageHome" 
@@ -50,7 +51,7 @@ export default function HomePage() {
 						marginTop: '30px',
 						textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
 					}}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>
-					<BuyCursButton />
+                    <StripeButton value={4900}/>
 				</Grid>
 				<Grid style={{
 					alignItems: 'center',

@@ -2,13 +2,12 @@ import {Box, Grid} from "@mui/material";
 import leftImage1 from "./images/left1.png";
 import vipImage from "./images/vip.png";
 import mv2 from "./images/mv2.gif";
-// import videoFile from "public/videos/file.mp4";
-
-import BuyCursButton, { EColorButton } from "../../(components)/button/buyCurs";
+import  { EColorButton } from "../../(components)/button/buyCurs";
 import Vik from "../../(components)/vic/vik";
 import NewPrice from "../../(components)/new-price/new-price";
 import MessageSvg from "../../(components)/message-svg/message-svg";
 import CoachingSection1 from '@/src/app/(site)/coaching/coaching-section1';
+import StripeButton from '@/src/app/(components)/button/stripeButton';
 
 
 
@@ -74,7 +73,7 @@ export default function Coaching() {
 				textAlign: 'center',
 				// margin: '0px 0'
 			}}>
-				<BuyCursButton caption='Записаться' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
+				<StripeButton value={39700} caption='Записаться' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 				<NewPrice oldParam={{value: 697, color: 'black'}} newParam={{value: 397, color: 'red'}}/>
 			</Grid>
 			{/*2**************/}
@@ -134,7 +133,7 @@ export default function Coaching() {
 				textAlign: 'center',
 				// margin: '0px 0'
 			}}>
-				<BuyCursButton caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
+				<StripeButton value={40000} caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 				<h1 style={{
 					display: 'flex',
 					alignItems: 'center',
@@ -158,7 +157,6 @@ export default function Coaching() {
 				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
 					fontSize: '32px',
 					fontWeight: 'bold',
-
 				}}>
 					<div style={{marginTop: '4rem'}}>ПАКЕТ VIP</div>
 					<div style={{marginBottom: '1rem'}}>1 НА 1</div>
@@ -220,7 +218,7 @@ export default function Coaching() {
 						margin: '0',
 						padding: '0'
 					}}>$2997 (цена скоро поднимиться)</h1>
-					<BuyCursButton caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
+					<StripeButton value={299700} caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 				</Grid>
 				<Grid size={{lg: 3, md: 3, sm: 0, xs: 0}}></Grid>
 			</Grid>
@@ -278,7 +276,7 @@ export default function Coaching() {
 				justifyContent: 'center',
 				textAlign: 'center',
 			}}>
-			<BuyCursButton />
+			<StripeButton value={4900} />
 			</Box>
 		</div>
 	)

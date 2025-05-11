@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import homeImageCurs from "../../../../public/homeImage.png";
-import BuyCursButton from "../../(components)/button/buyCurs";
 import NewPrice from "../../(components)/new-price/new-price";
+import StripeButton from '@/src/app/(components)/button/stripeButton';
 
 export default function Curs() {
 	return (
@@ -25,7 +25,7 @@ export default function Curs() {
 				/>
 
 				<NewPrice oldParam={{value: 299, color: 'white'} } newParam={{value: 49, color: 'red'}} />
-				<BuyCursButton />
+				<StripeButton value={4900} />
 			<div className={'titlePageCursWhiteText'}>
 				<div style={{ marginBottom: '10px' }}>"ЭТОТ ВИДЕО КУРС ПОМОГ МНЕ ЛУЧШЕ ЧЕМ</div>
 				<div style={{ marginBottom: '10px' }}>ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ С АМЕРИКАНСКИМИ УЧИТЕЛЯМИ ПРОИЗНОШЕНИЯ"</div>
@@ -41,7 +41,7 @@ export default function Curs() {
 				<div>КАК НИКОГДА РАНЬШЕ</div>
 				<div style={{ marginTop: '30px' }}>4. ВАШИ ДРУЗЬЯ И ЛЮДИ ВОКРУГ</div>
 				<div>ЗАМЕТЯТ РАЗНИЦУ В ВАШЕМ АНГЛИЙСКОМ</div>
-				<BuyCursButton />
+				<StripeButton value={4900} />
 				<Grid container spacing={3} columns={12} direction="row" style={{
 					alignItems: 'left',
 					justifyContent: 'center',
