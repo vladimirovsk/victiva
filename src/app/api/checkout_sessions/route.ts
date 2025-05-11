@@ -5,7 +5,9 @@ const stripe = new Stripe(process.env.NEXT_STRIPE_SECRET_KEY as string);
 
 export async function POST(request: NextRequest) {
   try {
+
     const origin = request.headers.get('origin') || 'http://localhost:3000';
+    console.log('Origin:', origin);
     const body = await request.json();
     const value = Number(body.value);
     if (isNaN(value) || value <= 0) {
