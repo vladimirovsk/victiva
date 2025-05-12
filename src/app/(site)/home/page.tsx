@@ -10,15 +10,6 @@ export default function HomePage() {
 			id='home' 
 			style={{ 
 				backgroundImage: `url(${homeImage.src})`,
-				// backgroundSize: '100% auto',
-				// backgroundPosition: 'top center',
-				// backgroundRepeat: 'no-repeat',
-				// height: '100vh',
-				// width: '100%',
-				// display: 'flex',
-				// flexDirection: 'column',
-				// alignItems: 'center',
-				// justifyContent: 'center',
 			}}
 		>
 			<Grid

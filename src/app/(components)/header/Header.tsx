@@ -74,6 +74,21 @@ export default function Header() {
 	const handleNavItemClick = (item:string, e: React.MouseEvent)=> {
 		if (e) {
 			e.preventDefault();
+
+
+			// For other nav items, check if they match routes that need direct navigation
+			const routeItems = ['home', 'curs', 'coaching', 'free', 'connect'];
+			if (routeItems.includes(item)) {
+				window.location.href = `/#${item}`;
+				handleMoreClose();
+				// return;
+			} else {
+				window.location.href = `/${item}`;
+				handleMoreClose();
+				return;
+			}
+
+			// Default behavior: scroll to element with ID
 			const element = document.getElementById(item);
 			if (element) {
 				// Get the height of the AppBar
@@ -90,7 +105,7 @@ export default function Header() {
 					behavior: 'smooth'
 				});
 			}
-			handleMoreClose()
+			// handleMoreClose();
 		}
 	}
 
@@ -160,11 +175,11 @@ export default function Header() {
 							open={open}
 							onClose={handleMoreClose}
 						>
-							<MenuItem onClick={handleMoreClose} disableRipple>
+							<MenuItem onClick={(e) => handleNavItemClick('package', e as React.MouseEvent)} disableRipple>
 								Пакеты с Vic
 							</MenuItem>
-							<MenuItem onClick={handleMoreClose} disableRipple>
-								Курс
+							<MenuItem onClick={(e) => handleNavItemClick('marathons', e as React.MouseEvent)} disableRipple>
+								Марафон
 							</MenuItem>
 							<MenuItem
 								onClick={(e) => handleNavItemClick('connect', e)}

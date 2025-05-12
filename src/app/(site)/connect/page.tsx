@@ -82,6 +82,14 @@ export default function Connect() {
 					<div><a href="mailto:thevictiva@gmail.com" style={{color:'white'}}>thevictiva@gmail.com</a></div>
 				</Grid>
 				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
+			</Grid>
+			<Grid container columns={12} style={{
+				alignItems: 'center',
+				justifyContent: 'center',
+				textAlign: 'center',
+				color: 'white',
+				fontSize: '2rem',
+			}}>
 				{/*/*row2***************/}
 				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
 				<Grid size={{lg: 6, md: 6, sm: 10, xs: 10}} style={{
@@ -91,6 +99,14 @@ export default function Connect() {
 					Часто Задаваемые Вопросы
 				</Grid>
 				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
+			</Grid>
+			<Grid container columns={12} style={{
+				alignItems: 'center',
+				justifyContent: 'center',
+				textAlign: 'center',
+				color: 'white',
+				fontSize: '2rem',
+			}}>
 				{/*/*row3***************/}
 				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
 				<Grid size={{lg: 6, md: 6, sm: 10, xs: 10}} style={{
@@ -135,18 +151,6 @@ export default function Connect() {
 					}
 				</Grid>
 				<Grid size={{lg: 3, md: 6, sm: 1, xs: 1}}/>
-				{/*/*row4***************/}
-				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
-				<Grid size={{lg: 6, md: 6, sm: 10, xs: 10}} style={{
-					fontSize: '1rem',
-					marginTop: '1rem',
-					marginBottom: '1rem'
-				}}>
-					<Box className={'footer'} style={{color:'gold'}}>
-						2025 © Vic Tiva All rights reserved.
-					</Box>
-				</Grid>
-				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}/>
 			</Grid>
 		</div>
 	)

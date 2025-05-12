@@ -3,6 +3,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import HeaderPage from "./(components)/header/page";
 import { Container } from "@mui/material";
+import Footer from '@/src/app/(components)/footer/footer';
 
 // const geistSans = Geist({
 // 	variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
 			<Container component="main" className={'mainContainer'} maxWidth={false}>
 				{children}
 			</Container>
+			< Footer />
 		</body>
 		</html>
 	);
