@@ -1,6 +1,6 @@
 'use client';
 import {Grid} from '@mui/material';
-import imageLa from './images/la.jpg';
+import imageLa from './images/la-new.jpg';
 import ImageLeft from './images/img1.png'
 import ImageRight from './images/im2.gif'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -12,7 +12,7 @@ export default function Free() {
 	return (
 		<div id="free" className={'titlePageFree'} style={{
 				paddingTop: '1rem',
-				backgroundImage: `url(${imageLa.src})`,
+				backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageLa.src})`,
 				backgroundSize: 'auto 100%',
 				backgroundPosition: 'top center',
 				backgroundRepeat: 'repeat',
@@ -45,6 +45,7 @@ export default function Free() {
 					fontWeight: 'bold',
 					fontSize: '28px',
 					marginTop: '3rem',
+					textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
 				}}>
 					БЕСПЛАТНАЯ ЧАСТЬ КУРСА
 					АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ
