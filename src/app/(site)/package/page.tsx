@@ -1,7 +1,10 @@
+'use client';
 import {Card, CardActions, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import img1 from './images/left1.png';
 import img2 from './images/vip.png';
 import StripeButton from "../../(components)/button/stripeButton";
+import ScrollAnimation from 'react-animate-on-scroll';
+import {useState} from 'react';
 
 interface ICardList {
 	key: number
@@ -12,6 +15,8 @@ interface ICardList {
 }
 
 export default function PackagePage() {
+	const [hoveredCardKey, setHoveredCardKey] = useState<number | null>(null);
+
 	const cardList: ICardList[] = [
 	{
 		key: 1,
@@ -48,9 +53,13 @@ export default function PackagePage() {
             <Grid key={`GridRow${service.key}`} size={{lg:3, md:3, sm:10, xs:10}}
                   style={{
 					  backgroundColor: 'black',
-                  }}>
+                  }}
+                  className={hoveredCardKey === service.key ? "animate__animated animate__pulse" : ""}
+                  onMouseEnter={() => setHoveredCardKey(service.key)}
+                  onMouseLeave={() => setHoveredCardKey(null)}
+            >
 				<Card style={{
-					height: 'calc(100vh/1.5)',
+					height: 'calc(100vh/1.7)',
 					width: '400px',
 					display: 'flex',
 					flexDirection: 'column',
