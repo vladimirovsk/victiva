@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 // import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import 'animate.css';
 import HeaderPage from "./(components)/header/page";
 import { Container } from "@mui/material";
 import Footer from '@/src/app/(components)/footer/footer';

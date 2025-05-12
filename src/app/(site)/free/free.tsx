@@ -6,6 +6,7 @@ import ImageRight from './images/im2.gif'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import Image3 from './images/img3.gif'
 import ArrowImage from './images/arrow.png'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default function Free() {
@@ -114,7 +115,7 @@ export default function Free() {
 					marginTop: '2rem',
 					marginBottom: '2rem',
 					textShadow: '3px 3px 5px rgba(0, 0, 0, 0.7)',
-					backgroundColor: 'rgba(0, 0, 0, 0.7)',
+					// backgroundColor: 'rgba(0, 0, 0, 0.7)',
 					padding: '1rem',
 					borderRadius: '8px'
 				}}>
@@ -172,13 +173,16 @@ export default function Free() {
 					flexDirection: 'column',
 					alignItems: 'center',
 				}}>
+					<ScrollAnimation animateIn="animate__rubberBand"  animateOut={'animate__rubberBand'} animatePreScroll={true} delay={1}>
 					Полный курс
+					</ScrollAnimation>
 					<div style={{ 
 						display: 'flex', 
 						justifyContent: 'left',
 						marginTop: '2rem',
 						gap: '2rem'
 					}}>
+						<ScrollAnimation animateIn="animate__fadeInTopLeft"  animateOut={'animate__fadeOutTopLeft'} animatePreScroll={true} delay={1}>
 						<img 
 							src={ArrowImage.src} 
 							alt="Arrow down" 
@@ -188,6 +192,8 @@ export default function Free() {
 								height: 'auto' 
 							}} 
 						/>
+						</ScrollAnimation>
+						<ScrollAnimation animateIn="animate__fadeInTopRight"  animateOut={'animate__fadeOutTopRight'} animatePreScroll={true} delay={1}>
 						<img 
 							src={ArrowImage.src} 
 							alt="Arrow down" 
@@ -197,6 +203,7 @@ export default function Free() {
 								height: 'auto' 
 							}} 
 						/>
+						</ScrollAnimation>
 					</div>
 				</Grid>
 				<Grid size={{lg: 4, md: 4, sm: 0, xs: 0}} style={{
