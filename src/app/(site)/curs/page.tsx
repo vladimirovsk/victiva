@@ -1,12 +1,30 @@
-import { Grid } from "@mui/material";
+'use client';
+import {Box, Grid, Paper} from "@mui/material";
+import Carousel from 'react-material-ui-carousel'
 import homeImageCurs from "../../../../public/homeImage.png";
+import imageExcelent from './images/excelent.png';
 import NewPrice from "../../(components)/new-price/new-price";
 import StripeButton from '@/src/app/(components)/button/stripeButton';
 
+const reviewLists = [
+	{
+		name:'Лера',
+		description: "Я раньше не понимала разговорный английский американцев. Я думала что это из за нехватки словарного запаса и грамматики, но теперь как я прошла курс, все стало прекрасно понятно. Спасибо вам Vic!"
+	},
+	{
+		name:'Александр',
+		description: "Я искал такой курс очень долго где произношению учит не только носитель английского, но и носитель русского который может идеально четко объяснить как все английские звуки работают которые я не понимал!"
+	},
+	{
+		name:'Вероника',
+		description: "Мне этот видео курс помог намного больше и быстрее чем занятия произношения с разными учителями американцами. Теперь американцы с которыми я общаюсь воспринимают меня в новом свете:)"
+	},
+
+]
+
 export default function Curs() {
 	return (
-		<div id="curs">
-			<Grid className={'titlePageCurs'}
+			<Grid id="curs" className={'titlePageCurs'}
 			      style={{
 					  display: 'flex',
                       flexDirection: 'column',
@@ -51,11 +69,6 @@ export default function Curs() {
 					textAlign: 'center',
 					margin: '20px 0'
 				}}>
-					{/*xs: 12,
-              sm: 6,
-              md: 4,
-              lg: 3,
-              */}
 					<Grid size={{lg:4, md:3, sm:0, xs:0}}></Grid>
 					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
 						alignItems: 'left',
@@ -63,20 +76,20 @@ export default function Curs() {
 						textAlign: 'left',
 						margin: '20px 0'
 					}}>
-					<div style={{
-						marginBottom: '30px',
-						alignItems: 'center',
-						justifyContent: 'center',
-						textAlign: 'center',
-					}}>СОДЕРЖАНИЕ КУРСА</div>
-					<div style={{ marginBottom: '20px' }}>✔ 9 главных звуков американского английского которые</div>
-					<div style={{ marginBottom: '20px' }}>русско-язычные люди НЕПРАВИЛЬНО ПРОИЗНОСЯТ</div>
-					<div style={{ marginBottom: '20px' }}>✔ 9 супер видео тренировок для каждого звука</div>
-					<div style={{ marginBottom: '20px' }}>✔ 1000 + слов где используеться каждый звук</div>
-					<div style={{ marginBottom: '20px' }}>✔ Видео примеры каждого звука из американских</div>
-					<div style={{ marginBottom: '20px' }}>сериалов, фильмов и песен</div>
-					<div style={{ marginBottom: '20px' }}>✔ Специальные упражнения для языка и мыщ рта</div>
-					<div style={{ marginBottom: '20px' }}>✔  Примеры с русскими звуками для каждого звука</div>
+						<div style={{
+							marginBottom: '30px',
+							alignItems: 'center',
+							justifyContent: 'center',
+							textAlign: 'center',
+						}}>СОДЕРЖАНИЕ КУРСА</div>
+						<div style={{ marginBottom: '20px' }}>✔ 9 главных звуков американского английского которые</div>
+						<div style={{ marginBottom: '20px' }}>русско-язычные люди НЕПРАВИЛЬНО ПРОИЗНОСЯТ</div>
+						<div style={{ marginBottom: '20px' }}>✔ 9 супер видео тренировок для каждого звука</div>
+						<div style={{ marginBottom: '20px' }}>✔ 1000 + слов где используеться каждый звук</div>
+						<div style={{ marginBottom: '20px' }}>✔ Видео примеры каждого звука из американских</div>
+						<div style={{ marginBottom: '20px' }}>сериалов, фильмов и песен</div>
+						<div style={{ marginBottom: '20px' }}>✔ Специальные упражнения для языка и мыщ рта</div>
+						<div style={{ marginBottom: '20px' }}>✔  Примеры с русскими звуками для каждого звука</div>
 					</Grid>
 					<Grid size={{lg:4, md:3, sm:0, xs:0}}></Grid>
 				</Grid>
@@ -87,8 +100,19 @@ export default function Curs() {
 					textAlign: 'center',
 					margin: '20px 0'
 				}}>
-					<Grid size={{lg:4, md:3, sm:0, xs:0}}></Grid>
-					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
+					<Grid size={{lg:4, md:3, sm:11, xs:11}} style={{
+						alignItems: 'right',
+						justifyContent: 'right',
+						textAlign: 'right',
+						margin: '20px 0'
+					}}>
+						<img src={imageExcelent.src} className="mx-auto"
+						     style={{
+							     margin: 40,
+							     width: '200px',
+						     }} alt="imageExcelent" />
+					</Grid>
+					<Grid size={{lg:4, md:6, sm:11, xs:11}} style={{
 						alignItems: 'left',
 						justifyContent: 'left',
 						textAlign: 'left',
@@ -106,10 +130,75 @@ export default function Curs() {
 							первых 30 дней. Настолько я уверен что этот курс это билет
 							к жизни которую вы желаете!</div>
 					</Grid>
-					<Grid size={{lg:4, md:3, sm:0, xs:0}}></Grid>
+					<Grid size={{lg:4, md:3, sm:1, xs:1}}></Grid>
 				</Grid>
 			</div>
+				<Grid container columns={12} spacing={0} style={{
+					width: '100%',
+					alignItems: 'center',
+					justifyContent: 'center',
+					textAlign: 'center',
+					backgroundColor: 'gold'
+				}}>
+					<Grid size={{lg:3, md:3, }} style ={{
+						backgroundColor: 'gold',
+					}}/>
+					<Grid size={{lg:6, md:6, sm:12, xs:12}}>
+						<Box sx={{
+							alignItems: 'center',
+							justifyContent: 'center',
+							textAlign: 'center',
+						}}>
+							<Carousel
+								autoPlay
+								interval={7000}
+								animation="slide"
+								navButtonsAlwaysVisible
+								swipe={true}
+								navButtonsProps={{
+									style: {
+										backgroundColor: "gold",
+										color: "black",
+										opacity: 0.5,
+									}
+								}}
+								indicators={false}
+
+							>
+								{reviewLists.map((item, index) => (
+									<Paper
+										key={index}
+										elevation={3}
+										sx={{
+											margin: 'auto',
+											fontSize: '22px',
+											p: 10,
+											// width: '100%',
+											// boxSizing: 'border-box',
+											backgroundColor: 'gold',
+											border: '0',
+										}}
+									>
+										<div style={{
+											marginBottom: '20px',
+											fontWeight: 'bold',
+										}}>{item.name}:</div>
+										<div style={{
+											alignItems: 'left',
+											textAlign: 'left',
+											justifyContent: 'left',
+											lineHeight: 1.6,
+										}}>"{item.description}"</div>
+									</Paper>
+								))}
+							</Carousel>
+						</Box>
+					</Grid>
+					<Grid size={{lg:3, md:3}} style={{
+						backgroundColor: 'gold',
+						border: '0',
+					}} />
+				</Grid>
 			</Grid>
-		</div>
 	)
 }
