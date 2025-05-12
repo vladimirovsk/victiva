@@ -8,8 +8,7 @@ interface ICardList {
 	names: string[],
 	image: string,
 	time: string,
-	value: number,
-	plane: string
+	value: number
 }
 
 export default function PackagePage() {
@@ -20,23 +19,20 @@ export default function PackagePage() {
 	 	image: img1.src,
 		time: '1 час 15 минут',
 		value: 397,
-		plane: 'Скоро обновление'
 	},
 	{
 		key: 2,
 		names: ['VIP 1 ЗАНЯТИЕ 1 НА 1 C VIC', '\u00A0'],
 		image: img2.src,
 		time: '1 час',
-		value: 400,
-		plane: 'Скоро обновление'
+		value: 400
 	},
 	{
 		key: 3,
 		names: ['ПАКЕТ VIP 1 НА 1 C VIC', '\u00A0'],
 		image: img2.src,
 		time: '1 час',
-		value: 2997,
-		plane: 'Скоро обновление'
+		value: 2997
 	},
 	]
 
@@ -55,7 +51,6 @@ export default function PackagePage() {
                   }}>
 				<Card style={{
 					height: 'calc(100vh/1.5)',
-					// height: '550px',
 					width: '400px',
 					display: 'flex',
 					flexDirection: 'column',
@@ -100,7 +95,7 @@ export default function PackagePage() {
 						<Typography variant="h5" style={{
 							marginTop: '1rem',
 						}}>
-							Стоимость: {service.value}
+							Стоимость: ${service.value}
 						</Typography>
 					</CardContent>
 					<CardActions key={`CardActions${service.key}`} sx={{
@@ -108,12 +103,6 @@ export default function PackagePage() {
 					}}>
 						<StripeButton value={service.value * 100} />
 					</CardActions>
-					<Typography variant="body2" style={{
-						color: 'white',
-						margin: '1rem',
-					}}>
-						{service.plane}
-					</Typography>
 				</Card>
 			</Grid>
 			))}
