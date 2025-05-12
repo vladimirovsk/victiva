@@ -13,7 +13,7 @@ export default function Free() {
 	return (
 		<div id="free" className={'titlePageFree'} style={{
 				paddingTop: '1rem',
-				backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageLa.src})`,
+				backgroundImage: `url(${imageLa.src})`,
 				backgroundSize: 'auto 100%',
 				backgroundPosition: 'top center',
 				backgroundRepeat: 'repeat',
