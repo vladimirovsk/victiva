@@ -38,7 +38,6 @@ export default function Free() {
 					justifyContent: 'flex-end',
 					textAlign: 'right',
 					height: '250px',
-					// width: '100%',
 					padding: '0 16px',
 					color: 'gold'
 				}} />
