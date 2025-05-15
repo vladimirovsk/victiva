@@ -9,10 +9,11 @@ import Footer from '@/src/app/(components)/footer/footer';
 const montserrat = Montserrat({
 	subsets: ["latin", "cyrillic"],
 	display: "swap",
+	variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
-	title: "VICT TIVA",
+	title: "VIC TIVA",
 	description: "Speak like american",
 };
 

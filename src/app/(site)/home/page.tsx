@@ -12,7 +12,6 @@ export default function HomePage() {
 		 	id='home'
 		 	style={{
 		 		 backgroundImage: `url(${backgroundImage.src})`,
-			    // width: '100%',
 			    backgroundSize: 'cover',
 			    backgroundPosition: 'top center',
 			    backgroundRepeat: 'no-repeat',
@@ -33,13 +32,13 @@ export default function HomePage() {
 						color: 'black',
                         fontWeight: 'bold',
 						fontSize: '32px',
-						marginTop: '30px',
+						marginTop: '20px',
 						// textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
 				}}>
 					<Container maxWidth={false}>
 						ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ
 						<Container style={{ position: 'relative', width: '100%', height: '400px' }}>
-						<Image layout="fill" objectFit="contain"  src={homeImage.src} alt="Home Image" />
+							<Image layout="fill" objectFit="contain"  src={homeImage.src} alt="Home Image" />
 						</Container>
 						<StripeButton value={4900}/>
 					</Container>
