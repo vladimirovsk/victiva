@@ -9,7 +9,7 @@ export default function MessageSvg() {
             <g>
               <path d="M220 20H20v118.474h167.041l16.889 10.637 1.41.889-.346-1.624-2.101-9.902H220V20z"></path>
             </g>
-            <text x="40" y="50" fill="black" fontSize="11" fontFamily="Arial">
+            <text x="40" y="50" fill="black" fontSize="11" fontFamily="Montserrat">
               <tspan x="40" dy="0">Что!? Вы еще не решились?</tspan>
               <tspan x="40" dy="20">Вот, посмотрите что я сделал</tspan>
               <tspan x="40" dy="20">когда ко мне начал говорить</tspan>

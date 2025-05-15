@@ -2,6 +2,7 @@
 
 import { Button } from "@mui/material";
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export enum EColorButton {
     gold= '#FFD700',
@@ -23,19 +24,24 @@ export default function BuyCursButton({
   fontColor=EColorButton.black
 }: BuyCursButtonProps) {
   return (
+    <ScrollAnimation animateIn="animate__pulse" animateOnce={true}>
     <Button
       variant="contained"
       onClick={onClick}
+      className="pulse-on-hover"
       style={{
+        borderRadius: '20px',
+        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
         backgroundColor: bgColor,
         color: fontColor,
         fontWeight: 'bold',
-        margin: '40px',
+        margin: '20px',
         fontSize: '1.3rem'
       }}
       sx={{ textTransform: 'none' }}
     >
         {caption}
     </Button>
+    </ScrollAnimation>
   );
 }

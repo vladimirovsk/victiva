@@ -17,6 +17,7 @@ import React, { useMemo } from 'react';
 import imageLogo from '../../../../public/imageLogo.png';
 import Image from 'next/image';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const StyledMenu = styled((props: MenuProps) => (
 	<Menu
@@ -146,7 +147,15 @@ export default function Header() {
 								onClick={(e) => handleNavItemClick(item.key, e)}
 								href={`#${item.key.toLowerCase()}`}
 								component="a"
-								sx={{ textTransform: 'none', color: 'black', fontSize: '1.1rem' }}
+								sx={{ 
+									color: 'black !important', 
+									fontSize: '1.1rem', 
+									fontFamily: 'Montserrat, sans-serif',
+									margin: '0 10px',
+									borderRadius: '20px',
+									padding: '6px 16px'
+								}}
+								style={{ color: 'black' }}
 							>
 								{item.caption}
 							</Button>
@@ -162,7 +171,16 @@ export default function Header() {
 			                disableElevation
 			                onClick={handleMoreClick}
 			                endIcon={<KeyboardArrowDownIcon />}
-							sx={{ textTransform: 'none', color: 'black', fontSize: '1.1rem', backgroundColor: '#fff' }}
+							sx={{ 
+								color: 'black !important', 
+								fontSize: '1.1rem', 
+								backgroundColor: '#fff', 
+								fontFamily: 'Montserrat, sans-serif',
+								margin: '0 10px',
+								borderRadius: '20px',
+								padding: '6px 16px'
+							}}
+							style={{ color: 'black' }}
 						>
 							Больше
 						</Button>
@@ -175,15 +193,25 @@ export default function Header() {
 							open={open}
 							onClose={handleMoreClose}
 						>
-							<MenuItem onClick={(e) => handleNavItemClick('package', e as React.MouseEvent)} disableRipple>
+							<MenuItem 
+								onClick={(e) => handleNavItemClick('package', e as React.MouseEvent)} 
+								disableRipple
+								sx={{ fontFamily: 'Montserrat, sans-serif' }}
+							>
 								Пакеты с Vic
 							</MenuItem>
-							<MenuItem onClick={(e) => handleNavItemClick('marathons', e as React.MouseEvent)} disableRipple>
+							<MenuItem 
+								onClick={(e) => handleNavItemClick('marathons', e as React.MouseEvent)} 
+								disableRipple
+								sx={{ fontFamily: 'Montserrat, sans-serif' }}
+							>
 								Марафон
 							</MenuItem>
 							<MenuItem
 								onClick={(e) => handleNavItemClick('connect', e)}
-								disableRipple>
+								disableRipple
+								sx={{ fontFamily: 'Montserrat, sans-serif' }}
+							>
 								Связатся
 							</MenuItem>
 						</StyledMenu>

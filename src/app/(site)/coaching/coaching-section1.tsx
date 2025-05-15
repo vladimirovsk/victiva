@@ -31,7 +31,7 @@ export default function CoachingSection1() {
 				<Box
 					sx={{
 						fontSize: { xs: '24px', md: '32px' },
-						fontFamily: 'sans-serif',
+						fontFamily: 'Montserrat, sans-serif',
 						fontWeight: 'bold',
 						color: '#333',
 						marginBottom: '16px',

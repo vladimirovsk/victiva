@@ -85,7 +85,7 @@ export default function Curs() {
 						<div style={{ marginBottom: '20px' }}>✔ 9 главных звуков американского английского которые</div>
 						<div style={{ marginBottom: '20px' }}>русско-язычные люди НЕПРАВИЛЬНО ПРОИЗНОСЯТ</div>
 						<div style={{ marginBottom: '20px' }}>✔ 9 супер видео тренировок для каждого звука</div>
-						<div style={{ marginBottom: '20px' }}>✔ 1000 + слов где используеться каждый звук</div>
+						<div style={{ marginBottom: '20px' }}>✔ 1000 + слов где исxьзуеться каждый звук</div>
 						<div style={{ marginBottom: '20px' }}>✔ Видео примеры каждого звука из американских</div>
 						<div style={{ marginBottom: '20px' }}>сериалов, фильмов и песен</div>
 						<div style={{ marginBottom: '20px' }}>✔ Специальные упражнения для языка и мыщ рта</div>

@@ -1,58 +1,71 @@
 'use client';
-import { Grid } from "@mui/material";
+import {Container, Grid} from "@mui/material";
 import homeImage from "../../../../public/homeImage.png";
+import backgroundImage from './images/backgroundHome1.png';
 import StripeButton from "../../(components)/button/stripeButton";
-import ScrollAnimation from 'react-animate-on-scroll';
-import { useState } from "react";
+import Image from 'next/image';
 
 export default function HomePage() {
-	const [isAnimated, setIsAnimated] = useState(false);
-
 	return (
-		<div 
-			className="pageHome" 
-			id='home' 
-			style={{ 
-				backgroundImage: `url(${homeImage.src})`,
-			}}
-		>
+		<Container component='div' maxWidth={false}
+		    className={'pageHome'}
+		 	id='home'
+		 	style={{
+		 		 backgroundImage: `url(${backgroundImage.src})`,
+			    // width: '100%',
+			    backgroundSize: 'cover',
+			    backgroundPosition: 'top center',
+			    backgroundRepeat: 'no-repeat',
+		 	}}
+		 >
 			<Grid
 				container
-				// rowSpacing={2}
-				// spacing={1}
 				columns={1}
-				// columnSpacing={{ xs: 1, sm: 1, md: 1 }}
 				direction="column" 
 				alignItems="center" 
 				justifyContent="center"
-				// style={{ height: '50vh', width: '100%' }}
-				paddingTop={20}
+				paddingTop={10}
 			>
-				<ScrollAnimation animateIn="animate__zoomIn animate__pulse" animateOut={'animate__zoomOut'}  animatePreScroll={true} delay={0}>
-				<Grid
-					className={isAnimated ? "animate__animated animate__pulse" : ""}
-					onMouseEnter={() => setIsAnimated(true)}
-					onMouseLeave={() => setIsAnimated(false)}
-			        style={{
-						backgroundColor: 'rgba(0, 0, 0, 0.6)',
-				        marginTop: '15rem',
-						width: '350px',
-				        height: '250px',
-						display: 'flex',
-						flexDirection: 'column',
-						alignItems: 'center',
-						justifyContent: 'center',
-						textAlign: 'center',
-						padding: '20px',
-				}}>
-					<div  style={{
+				<Grid style={{
+						alignItems:"center",
+						justifyContent:"center",
+						textAlign: "center",
+						color: 'black',
+                        fontWeight: 'bold',
 						fontSize: '32px',
 						marginTop: '30px',
-						textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
-					}}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>
-                    <StripeButton value={4900}/>
+						// textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
+				}}>
+					<Container maxWidth={false}>
+						ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ
+						<Container style={{ position: 'relative', width: '100%', height: '400px' }}>
+						<Image layout="fill" objectFit="contain"  src={homeImage.src} alt="Home Image" />
+						</Container>
+						<StripeButton value={4900}/>
+					</Container>
 				</Grid>
-				</ScrollAnimation>
+				{/*<Grid*/}
+			    {/*    style={{*/}
+				{/*		backgroundColor: 'rgba(0, 0, 0, 0.6)',*/}
+				{/*        marginTop: '15rem',*/}
+				{/*		width: '350px',*/}
+				{/*        height: '250px',*/}
+				{/*		display: 'flex',*/}
+				{/*		flexDirection: 'column',*/}
+				{/*		alignItems: 'center',*/}
+				{/*		justifyContent: 'center',*/}
+				{/*		textAlign: 'center',*/}
+				{/*		padding: '20px',*/}
+				{/*}}>*/}
+				{/*	<div  style={{*/}
+				{/*		color: 'gold',*/}
+				{/*		fontSize: '32px',*/}
+				{/*		marginTop: '30px',*/}
+				{/*		textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',*/}
+				{/*	}}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>*/}
+                {/*    <StripeButton value={4900}/>*/}
+				{/*</Grid>*/}
+
 				<Grid style={{
 					alignItems: 'center',
 					justifyContent: 'center',
@@ -61,14 +74,21 @@ export default function HomePage() {
 					fontSize: '1.3rem',
 					padding: '30px',
 				}}>
-					<ScrollAnimation animateIn="animate__bounce"  animatePreScroll={true} delay={1}>
-						<div>Лучший в мире курс</div>
-						<div>американского произношения для</div>
-						<div>русско-говорящих от американца</div>
-					</ScrollAnimation>
+						<div style={{
+							maxWidth: '400px',
+							border: '4px solid gold',
+							borderRadius: '15px',
+							backgroundColor: '#d1cfcf',
+							color: 'black',
+							padding:  '20px',
+						}}>
+							<div>Лучший в мире курс
+							американского произношения для
+							русско-говорящих от американца</div>
+						</div>
 				</Grid>
 			</Grid>
 
-		</div>
+		</Container>
 	)
 }

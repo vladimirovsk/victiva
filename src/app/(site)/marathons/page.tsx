@@ -1,9 +1,7 @@
-import {Box, Grid, Paper} from '@mui/material';
+import {Grid} from '@mui/material';
 import homeImageCurs from '@/public/homeImage.png';
 import NewPrice from '@/src/app/(components)/new-price/new-price';
 import StripeButton from '@/src/app/(components)/button/stripeButton';
-import imageExcelent from '@/src/app/(site)/curs/images/excelent.png';
-import Carousel from 'react-material-ui-carousel';
 
 export default function MarathonsPage() {
 	return (

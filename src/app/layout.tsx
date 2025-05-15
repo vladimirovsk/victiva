@@ -1,20 +1,15 @@
 import type {Metadata} from "next";
-// import {Geist, Geist_Mono} from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import 'animate.css';
 import HeaderPage from "./(components)/header/page";
 import { Container } from "@mui/material";
 import Footer from '@/src/app/(components)/footer/footer';
 
-// const geistSans = Geist({
-// 	variable: "--font-geist-sans",
-// 	subsets: ["latin"],
-// });
-//
-// const geistMono = Geist_Mono({
-// 	variable: "--font-geist-mono",
-// 	subsets: ["latin"],
-// });
+const montserrat = Montserrat({
+	subsets: ["latin", "cyrillic"],
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "VICT TIVA",
@@ -27,8 +22,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		// <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-		<html lang="ru">
+		<html lang="ru" className={montserrat.variable}>
 		<body>
 			<HeaderPage/>
 			<Container component="main" className={'mainContainer'} maxWidth={false}>
