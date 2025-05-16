@@ -1,6 +1,6 @@
 'use client';
 import {Grid} from '@mui/material';
-import imageBackground from './images/backgroundHome1.png';
+import imageBackground from './images/backgroundStar.jpg';
 import ImageLeft from './images/img1.png'
 import ImageRight from './images/im2.gif'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -15,81 +15,75 @@ export default function Free() {
 				paddingTop: '1rem',
 				backgroundImage: `url(${imageBackground.src})`,
 				backgroundSize: 'cover',
-				backgroundPosition: 'top center',
-				backgroundRepeat: 'no-repeat',
-				backgroundColor: 'rgba(255, 255, 255, 0.9',
+				backgroundPosition: 'right center',
+				backgroundRepeat: 'repeat',
+				backgroundColor: 'rgba(255, 255, 255, 0.8)',
 				backgroundBlendMode: 'overlay',
-
-				// backgroundSize: 'auto 100%',
-				// backgroundPosition: 'top center',
-				// backgroundRepeat: 'repeat',
 				alignItems: 'center',
 				justifyContent: 'center',
 				textAlign: 'center',
-				// height: '50vh',
-				// padding: '0 16px',
 				color: 'gold'
 			}}>
 				{/***row1***********/}
 				<Grid container columns={12} spacing={1} style={{
 					marginTop: '2rem',
 				}}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
-					backgroundImage: `url(${ImageLeft.src})`,
-					backgroundSize: 'contain',
-					backgroundPosition: 'center',
-					backgroundRepeat: 'no-repeat',
-					display: 'flex',
-					alignItems: 'flex-end',
-					justifyContent: 'flex-end',
-					textAlign: 'right',
-					height: '250px',
-					padding: '0 16px',
-					color: 'gold'
-				}} />
-				<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
-					fontWeight: 'bold',
-					fontSize: '28px',
-					marginTop: '3rem',
-					textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
-				}}>
-					БЕСПЛАТНАЯ ЧАСТЬ КУРСА
-					АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ
-					"ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ"
-					ОТ АМЕРИКАНЦА
-				</Grid>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
-					backgroundImage: `url(${ImageRight.src})`,
-					backgroundSize: 'contain',
-					backgroundPosition: 'center left',
-					backgroundRepeat: 'no-repeat',
-					display: 'flex',
-					alignItems: 'flex-start',
-					justifyContent: 'flex-start',
-					textAlign: 'left',
-					height: '250px',
-					// width: '100%',
-					padding: '0 16px',
-					color: 'gold'
-				}}/>
+					<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
+						backgroundImage: `url(${ImageLeft.src})`,
+						backgroundSize: 'contain',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat',
+						display: 'flex',
+						alignItems: 'flex-end',
+						justifyContent: 'flex-end',
+						textAlign: 'right',
+						height: '250px',
+						padding: '0 16px',
+						color: 'gold'
+					}} />
+					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
+						fontWeight: 'bold',
+						fontSize: '28px',
+						marginTop: '3rem',
+						textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
+					}}>
+						БЕСПЛАТНАЯ ЧАСТЬ КУРСА
+						АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ
+						"ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ"
+						ОТ АМЕРИКАНЦА
+					</Grid>
+					<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
+						backgroundImage: `url(${ImageRight.src})`,
+						backgroundSize: 'contain',
+						backgroundPosition: 'center left',
+						backgroundRepeat: 'no-repeat',
+						display: 'flex',
+						alignItems: 'flex-start',
+						justifyContent: 'flex-start',
+						textAlign: 'left',
+						height: '250px',
+						// width: '100%',
+						padding: '0 16px',
+						color: 'gold'
+					}}/>
 				</Grid>
 				{/***row2***********/}
 				<Grid container columns={12} spacing={1} style={{
-				}}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
-				<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
-					fontWeight: 'bold',
-					fontSize: '22px',
-					letterSpacing: '0.3rem',
-					textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
-					// backgroundColor: 'rgba(0, 0, 0, 0.6)',
-					padding: '1rem',
-					marginTop: '2rem',
-					borderRadius: '8px'
-				}}>
-					1.КАК НА САМОМ ДЕЛЕ АМЕРИКАНЦЫ ВОСПРИНИМАЮТ РУССКИЙ АКЦЕНТ?
-				</Grid>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}} />
+				}}>https://youtu.be/RvDXo0NXR1A
+					<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
+					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
+						fontWeight: 'bold',
+						fontSize: '22px',
+						letterSpacing: '0.3rem',
+						textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
+						// backgroundColor: 'rgba(0, 0, 0, 0.6)',
+						padding: '1rem',
+						marginTop: '2rem',
+						borderRadius: '8px'
+					}}>
+						1.КАК НА САМОМ ДЕЛЕ АМЕРИКАНЦЫ ВОСПРИНИМАЮТ РУССКИЙ АКЦЕНТ?
+					</Grid>
+					<Grid size={{lg:4, md:3, sm:12, xs:12}} />
 				</Grid>
 				{/***row3***********/}
 				<Grid container columns={12} spacing={1}>
