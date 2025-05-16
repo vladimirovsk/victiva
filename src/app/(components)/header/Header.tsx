@@ -149,8 +149,9 @@ export default function Header() {
 								component="a"
 								sx={{ 
 									color: 'black !important', 
-									fontSize: '1.1rem', 
+									fontSize: '1.1rem',
 									fontFamily: 'Montserrat, sans-serif',
+									fontWeight: 'bold',
 									margin: '0 10px',
 									borderRadius: '20px',
 									padding: '6px 16px'
@@ -173,7 +174,8 @@ export default function Header() {
 			                endIcon={<KeyboardArrowDownIcon />}
 							sx={{ 
 								color: 'black !important', 
-								fontSize: '1.1rem', 
+								fontSize: '1.1rem',
+								fontWeight: 'bold',
 								backgroundColor: '#fff', 
 								fontFamily: 'Montserrat, sans-serif',
 								margin: '0 10px',
@@ -184,37 +186,6 @@ export default function Header() {
 						>
 							Больше
 						</Button>
-						<StyledMenu
-							id="demo-customized-menu"
-							MenuListProps={{
-								'aria-labelledby': 'demo-customized-button',
-							}}
-							anchorEl={anchorEl}
-							open={open}
-							onClose={handleMoreClose}
-						>
-							<MenuItem 
-								onClick={(e) => handleNavItemClick('package', e as React.MouseEvent)} 
-								disableRipple
-								sx={{ fontFamily: 'Montserrat, sans-serif' }}
-							>
-								Пакеты с Vic
-							</MenuItem>
-							<MenuItem 
-								onClick={(e) => handleNavItemClick('marathons', e as React.MouseEvent)} 
-								disableRipple
-								sx={{ fontFamily: 'Montserrat, sans-serif' }}
-							>
-								Марафон
-							</MenuItem>
-							<MenuItem
-								onClick={(e) => handleNavItemClick('connect', e)}
-								disableRipple
-								sx={{ fontFamily: 'Montserrat, sans-serif' }}
-							>
-								Связатся
-							</MenuItem>
-						</StyledMenu>
 					</Box>
 				</Toolbar>
 			</Container>

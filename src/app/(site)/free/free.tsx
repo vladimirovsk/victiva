@@ -1,6 +1,6 @@
 'use client';
 import {Grid} from '@mui/material';
-import imageLa from './images/la-new.jpg';
+import imageBackground from './images/backgroundHome1.png';
 import ImageLeft from './images/img1.png'
 import ImageRight from './images/im2.gif'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -13,10 +13,16 @@ export default function Free() {
 	return (
 		<div id="free" className={'titlePageFree'} style={{
 				paddingTop: '1rem',
-				backgroundImage: `url(${imageLa.src})`,
-				backgroundSize: 'auto 100%',
+				backgroundImage: `url(${imageBackground.src})`,
+				backgroundSize: 'cover',
 				backgroundPosition: 'top center',
-				backgroundRepeat: 'repeat',
+				backgroundRepeat: 'no-repeat',
+				backgroundColor: 'rgba(255, 255, 255, 0.9',
+				backgroundBlendMode: 'overlay',
+
+				// backgroundSize: 'auto 100%',
+				// backgroundPosition: 'top center',
+				// backgroundRepeat: 'repeat',
 				alignItems: 'center',
 				justifyContent: 'center',
 				textAlign: 'center',
@@ -31,7 +37,7 @@ export default function Free() {
 				<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
 					backgroundImage: `url(${ImageLeft.src})`,
 					backgroundSize: 'contain',
-					backgroundPosition: 'center right',
+					backgroundPosition: 'center',
 					backgroundRepeat: 'no-repeat',
 					display: 'flex',
 					alignItems: 'flex-end',

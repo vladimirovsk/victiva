@@ -31,11 +31,10 @@ export default function BuyCursButton({
       className="pulse-on-hover"
       style={{
         borderRadius: '20px',
-        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
         backgroundColor: bgColor,
         color: fontColor,
         fontWeight: 'bold',
-        margin: '20px',
+        margin: '1rem',
         fontSize: '1.3rem'
       }}
       sx={{ textTransform: 'none' }}

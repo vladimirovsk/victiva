@@ -11,10 +11,12 @@ export default function HomePage() {
 		    className={'pageHome'}
 		 	id='home'
 		 	style={{
-		 		 backgroundImage: `url(${backgroundImage.src})`,
+		 		backgroundImage: `url(${backgroundImage.src})`,
 			    backgroundSize: 'cover',
 			    backgroundPosition: 'top center',
 			    backgroundRepeat: 'no-repeat',
+			    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+			    backgroundBlendMode: 'overlay',
 		 	}}
 		 >
 			<Grid
@@ -23,7 +25,8 @@ export default function HomePage() {
 				direction="column" 
 				alignItems="center" 
 				justifyContent="center"
-				paddingTop={10}
+				paddingTop={2}
+				marginBottom={2}
 			>
 				<Grid style={{
 						alignItems:"center",
@@ -32,15 +35,25 @@ export default function HomePage() {
 						color: 'black',
                         fontWeight: 'bold',
 						fontSize: '32px',
-						marginTop: '20px',
+						marginTop: '1.5rem',
 						// textShadow: '3px 3px 4px rgba(0, 0, 0, 1)',
 				}}>
 					<Container maxWidth={false}>
-						ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ
+						<div style={{
+							color: 'gold',
+							fontWeight: 'bold',
+							fontSize: '40px',
+							marginBottom: '1.5rem',
+							// WebkitTextStroke: '1px black',
+							textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
+						}}>
+							ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ
+						</div>
 						<Container style={{ position: 'relative', width: '100%', height: '400px' }}>
 							<Image layout="fill" objectFit="contain"  src={homeImage.src} alt="Home Image" />
 						</Container>
 						<StripeButton value={4900}/>
+
 					</Container>
 				</Grid>
 				{/*<Grid*/}
@@ -77,7 +90,7 @@ export default function HomePage() {
 							maxWidth: '400px',
 							border: '4px solid gold',
 							borderRadius: '15px',
-							backgroundColor: '#d1cfcf',
+							backgroundColor: '#fffefe',
 							color: 'black',
 							padding:  '20px',
 						}}>
