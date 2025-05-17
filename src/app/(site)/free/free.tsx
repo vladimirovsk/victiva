@@ -1,6 +1,6 @@
 'use client';
 import {Grid} from '@mui/material';
-import imageBackground from './images/backgroundStar.jpg';
+import imageBackground from './images/backendStar1.png';
 import ImageLeft from './images/img1.png'
 import ImageRight from './images/im2.gif'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -25,13 +25,11 @@ export default function Free() {
 				color: 'gold'
 			}}>
 				{/***row1***********/}
-				<Grid container columns={12} spacing={1} style={{
-					marginTop: '2rem',
-				}}>
-					<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
+				<Grid container columns={12} spacing={0} >
+					<Grid size={{lg:2, md:3, sm:12, xs:12}} style={{
 						backgroundImage: `url(${ImageLeft.src})`,
 						backgroundSize: 'contain',
-						backgroundPosition: 'center',
+						backgroundPosition: 'center right',
 						backgroundRepeat: 'no-repeat',
 						display: 'flex',
 						alignItems: 'flex-end',
@@ -41,18 +39,19 @@ export default function Free() {
 						padding: '0 16px',
 						color: 'gold'
 					}} />
-					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
+					<Grid size={{lg:8, md:6, sm:12, xs:12}} style={{
 						fontWeight: 'bold',
 						fontSize: '28px',
-						marginTop: '3rem',
-						textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
+						marginTop: '1rem',
+						textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
 					}}>
-						БЕСПЛАТНАЯ ЧАСТЬ КУРСА
-						АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ
-						"ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ"
-						ОТ АМЕРИКАНЦА
+						<div style={{
+							marginBottom: '2rem',marginTop: '2rem',
+						}}>БЕСПЛАТНАЯ ЧАСТЬ КУРСА АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ</div>
+						<div>"ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ" ОТ АМЕРИКАНЦА</div>
 					</Grid>
-					<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
+					<Grid size={{lg:2, md:3, sm:12, xs:12}} style={{
+						// marginRight: '1rem',
 						backgroundImage: `url(${ImageRight.src})`,
 						backgroundSize: 'contain',
 						backgroundPosition: 'center left',
@@ -69,17 +68,17 @@ export default function Free() {
 				</Grid>
 				{/***row2***********/}
 				<Grid container columns={12} spacing={1} style={{
-				}}>https://youtu.be/RvDXo0NXR1A
+				}}>
 					<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
 					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
 						fontWeight: 'bold',
 						fontSize: '22px',
 						letterSpacing: '0.3rem',
-						textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)',
-						// backgroundColor: 'rgba(0, 0, 0, 0.6)',
-						padding: '1rem',
 						marginTop: '2rem',
-						borderRadius: '8px'
+						marginBottom: '2rem',
+						padding: '1rem',
+						borderRadius: '8px',
+						textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
 					}}>
 						1.КАК НА САМОМ ДЕЛЕ АМЕРИКАНЦЫ ВОСПРИНИМАЮТ РУССКИЙ АКЦЕНТ?
 					</Grid>
@@ -113,10 +112,9 @@ export default function Free() {
 					letterSpacing: '0.3rem',
 					marginTop: '2rem',
 					marginBottom: '2rem',
-					textShadow: '3px 3px 5px rgba(0, 0, 0, 0.7)',
-					// backgroundColor: 'rgba(0, 0, 0, 0.7)',
 					padding: '1rem',
-					borderRadius: '8px'
+					borderRadius: '8px',
+					textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
 				}}>
 					2.РУССКИЙ ЗВУК В АНГЛИЙСКОМ КОТОРЫЙ  РУССКО-ГОВОРЯЩИЕ ЛЮДИ НЕ ПРОИЗНОСЯТ ПОЧЕМУ ТО...
 					И СЕКРЕТ КОТОРОГО НЕХВАТАЕТ
@@ -167,7 +165,7 @@ export default function Free() {
 					letterSpacing: '0.3rem',
 					marginTop: '5rem',
 					marginBottom: '1rem',
-					textShadow: '4px 3px 5px rgba(0, 0, 0, 0.9)',
+					textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
 					display: 'flex',
 					flexDirection: 'column',
 					alignItems: 'center',
