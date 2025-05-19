@@ -1,5 +1,5 @@
 import {Grid} from '@mui/material';
-import homeImageCurs from '@/public/homeImage.png';
+import homeImageCurs from './images/homeImage.png';
 import NewPrice from '@/src/app/(components)/new-price/new-price';
 import StripeButton from '@/src/app/(components)/button/stripeButton';
 

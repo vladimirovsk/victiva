@@ -3,7 +3,7 @@ name: Build and Deploy web page
 on:
   push:
     branches:
-      - main
+      - main-disabled
 
 jobs:
   build-and-deploy:
