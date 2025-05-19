@@ -25,52 +25,73 @@ export default function Free() {
 				color: 'gold'
 			}}>
 				{/***row1***********/}
-				<Grid container columns={12} spacing={0} >
-					<Grid size={{lg:2, md:3, sm:12, xs:12}} style={{
-						backgroundImage: `url(${ImageLeft.src})`,
-						backgroundSize: 'contain',
-						backgroundPosition: 'center right',
-						backgroundRepeat: 'no-repeat',
-						display: 'flex',
-						alignItems: 'flex-end',
-						justifyContent: 'flex-end',
-						textAlign: 'right',
-						height: '250px',
-						padding: '0 16px',
-						color: 'gold'
-					}} />
-					<Grid size={{lg:8, md:6, sm:12, xs:12}} style={{
-						fontWeight: 'bold',
-						fontSize: '28px',
-						marginTop: '1rem',
-						textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
-					}}>
+				<Grid container columns={12} spacing={0} style={{
+					display: 'flex',
+					flexWrap: 'wrap'
+				}}>
+					<Grid
+						size={{lg: 2, md: 3, sm: 12, xs: 12}}
+						sx={{
+							backgroundImage: `url(${ImageLeft.src})`,
+							backgroundSize: 'contain',
+							backgroundPosition: 'center right',
+							backgroundRepeat: 'no-repeat',
+							display: 'flex',
+							alignItems: 'flex-end',
+							justifyContent: 'flex-end',
+							textAlign: 'right',
+							height: '250px',
+							width: '100%',
+							maxWidth: '250px',
+							padding: '0 16px',
+							color: 'gold',
+							order: 1,
+							margin: '0 auto',
+						}}
+					/>
+					<Grid
+						size={{lg: 8, md: 6, sm: 12, xs: 12}}
+						sx={{
+							fontWeight: 'bold',
+							fontSize: { lg: '28px', md: '28px', sm: '24px', xs: '22px' },
+							marginTop: { lg: '1rem', md: '1rem', sm: '0', xs: '0' },
+							marginBottom: { lg: '0', md: '0', sm: '1rem', xs: '1rem' },
+							letterSpacing: '0.3rem',
+							textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000',
+							order: { lg: 2, md: 2, sm: 3, xs: 3 },
+						}}
+					>
 						<div style={{
 							marginBottom: '2rem',marginTop: '2rem',
 						}}>БЕСПЛАТНАЯ ЧАСТЬ КУРСА АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ</div>
 						<div>"ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ" ОТ АМЕРИКАНЦА</div>
 					</Grid>
-					<Grid size={{lg:2, md:3, sm:12, xs:12}} style={{
-						// marginRight: '1rem',
-						backgroundImage: `url(${ImageRight.src})`,
-						backgroundSize: 'contain',
-						backgroundPosition: 'center left',
-						backgroundRepeat: 'no-repeat',
-						display: 'flex',
-						alignItems: 'flex-start',
-						justifyContent: 'flex-start',
-						textAlign: 'left',
-						height: '250px',
-						// width: '100%',
-						padding: '0 16px',
-						color: 'gold'
-					}}/>
+					<Grid
+						size={{lg: 2, md: 3, sm: 12, xs: 12}}
+						sx={{
+							backgroundImage: `url(${ImageRight.src})`,
+							backgroundSize: 'contain',
+							backgroundPosition: 'center left',
+							backgroundRepeat: 'no-repeat',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center',
+							textAlign: 'center',
+							height: '250px',
+							width: '100%',
+							padding: '0 16px',
+							color: 'gold',
+							order: 3,
+							maxWidth: '250px',
+							margin: '0 auto',
+						}}
+					/>
 				</Grid>
 				{/***row2***********/}
 				<Grid container columns={12} spacing={1} style={{
 				}}>
-					<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
-					<Grid size={{lg:4, md:6, sm:12, xs:12}} style={{
+					<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}}/>
+					<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
 						fontWeight: 'bold',
 						fontSize: '22px',
 						letterSpacing: '0.3rem',
@@ -82,11 +103,11 @@ export default function Free() {
 					}}>
 						1.КАК НА САМОМ ДЕЛЕ АМЕРИКАНЦЫ ВОСПРИНИМАЮТ РУССКИЙ АКЦЕНТ?
 					</Grid>
-					<Grid size={{lg:4, md:3, sm:12, xs:12}} />
+					<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}} />
 				</Grid>
 				{/***row3***********/}
 				<Grid container columns={12} spacing={1}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}}/>
 				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
 					fontWeight: 'bold',
 					fontSize: '22px',
@@ -105,7 +126,7 @@ export default function Free() {
 				</Grid>
 				{/***row4***********/}
 				<Grid container columns={12} spacing={1}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}}/>
 				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
 					fontWeight: 'bold',
 					fontSize: '22px',
@@ -125,7 +146,7 @@ export default function Free() {
 				</Grid>
 				{/***row5***********/}
 				<Grid container columns={12} spacing={1}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}}/>
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}}/>
 				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
 					fontWeight: 'bold',
 					fontSize: '22px',
@@ -144,7 +165,7 @@ export default function Free() {
 				</Grid>
 				{/***row6***********/}
 				<Grid container columns={12} spacing={1}>
-				<Grid size={{lg:4, md:3, sm:12, xs:12}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}} style={{
 					marginTop: '5rem',
 					backgroundImage: `url(${Image3.src})`,
 					backgroundSize: 'contain',
@@ -203,9 +224,7 @@ export default function Free() {
 						</ScrollAnimation>
 					</div>
 				</Grid>
-				<Grid size={{lg: 4, md: 4, sm: 0, xs: 0}} style={{
-
-				}}/>
+				<Grid size={{lg: 4, md: 4, sm: 0, xs: 0}} />
 				</Grid>
 		</div>
 

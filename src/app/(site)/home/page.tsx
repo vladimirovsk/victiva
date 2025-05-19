@@ -1,7 +1,7 @@
 'use client';
 import {Container, Grid} from "@mui/material";
 import homeImage from "../../../../public/homeImage.png";
-import backgroundImage from './images/backgroundHome1.png';
+import backgroundImage from './images/la-new.jpg';
 import StripeButton from "../../(components)/button/stripeButton";
 import Image from 'next/image';
 
@@ -13,9 +13,10 @@ export default function HomePage() {
 		 	style={{
 		 		backgroundImage: `url(${backgroundImage.src})`,
 			    backgroundSize: 'cover',
+			    height: '100vh',
 			    backgroundPosition: 'top center',
 			    backgroundRepeat: 'no-repeat',
-			    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+			    // backgroundColor: 'rgba(255, 255, 255, 0.8)',
 			    backgroundBlendMode: 'overlay',
 		 	}}
 		 >
