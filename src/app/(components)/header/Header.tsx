@@ -16,7 +16,7 @@ export default function Header() {
 		{ key: 'curs', caption: 'Курс'},
 		{ key: 'coaching', caption: 'Coaching'},
 		{ key: 'free', caption: 'Бесплатно'},
-		{ key: 'more', caption: 'Больше'}
+		{ key: 'package', caption: 'Пакеты'}
 	], []);
 
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

@@ -42,7 +42,7 @@ export default function PackagePage() {
 	]
 
 	return (
-		<Grid container columns={12} spacing={10} style={{
+		<Grid id={'package'} container columns={12} spacing={10} style={{
 			height: 'calc(100vh - 64px - 3rem)',
 			backgroundColor: 'black',
 			alignItems: 'center',

@@ -5,7 +5,7 @@ import StripeButton from '@/src/app/(components)/button/stripeButton';
 
 export default function MarathonsPage() {
 	return (
-		<Grid id="curs" className={'titlePageCurs'}
+		<Grid id="marathons" className={'titlePageCurs'}
 		      style={{
 			      height: 'calc(100vh - 64px - 3rem)',
 			      display: 'flex',
