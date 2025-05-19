@@ -25,5 +25,6 @@ jobs:
           NEXT_OUTPUT: export
           NEXT_STRIPE_SECRET_KEY: ${{ secrets.NEXT_STRIPE_SECRET_KEY }}
           NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+          NEXTAUTH_SECRET: ${{secret.NEXTAUTH_SECRET}}
 
         run: npm run build
