@@ -12,7 +12,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default function Free() {
 	return (
 		<div id="free" className={'titlePageFree'} style={{
-				paddingTop: '1rem',
+				paddingTop: '4rem',
 				backgroundImage: `url(${imageBackground.src})`,
 				backgroundSize: 'cover',
 				backgroundPosition: 'right center',
@@ -34,12 +34,11 @@ export default function Free() {
 						sx={{
 							backgroundImage: `url(${ImageLeft.src})`,
 							backgroundSize: 'contain',
-							backgroundPosition: 'center right',
+							backgroundPosition: 'center',
 							backgroundRepeat: 'no-repeat',
 							display: 'flex',
 							alignItems: 'flex-end',
 							justifyContent: 'flex-end',
-							textAlign: 'right',
 							height: '250px',
 							width: '100%',
 							maxWidth: '250px',
