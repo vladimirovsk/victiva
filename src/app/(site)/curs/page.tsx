@@ -1,7 +1,7 @@
 'use client';
 import {Box, Grid, Paper} from "@mui/material";
 import Carousel from 'react-material-ui-carousel'
-import homeImageCurs from "../../../../public/homeImage.png";
+import homeImageCurs from "./images/homeImage.png";
 import imageExcelent from './images/excelent.png';
 import NewPrice from "../../(components)/new-price/new-price";
 import StripeButton from '@/src/app/(components)/button/stripeButton';

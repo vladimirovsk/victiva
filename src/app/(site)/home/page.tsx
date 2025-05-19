@@ -1,6 +1,6 @@
 'use client';
 import {Container, Grid} from "@mui/material";
-import homeImage from "../../../../public/homeImage.png";
+import homeImage from "./images/homeImage.png";
 import backgroundImage from './images/la-new.jpg';
 import StripeButton from "../../(components)/button/stripeButton";
 import Image from 'next/image';
@@ -51,7 +51,18 @@ export default function HomePage() {
 							ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ
 						</div>
 						<Container style={{ position: 'relative', width: '100%', height: '400px' }}>
-							<Image layout="fill" objectFit="contain"  src={homeImage.src} alt="Home Image" />
+							<Image
+								src={homeImage.src}
+								alt="Home Image"
+								fill
+								// layout="fill"
+								// objectFit="contain"
+								style={{
+									objectFit: 'contain',
+									// width: '100%',
+									// height: 'auto',
+								}}
+							/>
 						</Container>
 						<StripeButton value={4900}/>
 
