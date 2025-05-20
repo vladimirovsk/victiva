@@ -1,5 +1,4 @@
 "use client";
-
 import {
 	AppBar,
 	Box,
@@ -10,6 +9,7 @@ import {
 import React, { useMemo } from 'react';
 import imageLogo from '../../../../public/imageLogo.png';
 import Image from 'next/image';
+import {useSession, signOut, signIn } from 'next-auth/react';
 
 export default function Header() {
 	const navItems = useMemo(() => [
@@ -18,6 +18,8 @@ export default function Header() {
 		{ key: 'free', caption: 'Бесплатно'},
 		{ key: 'package', caption: 'Пакеты'}
 	], []);
+
+	const sesson = useSession();
 
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
@@ -58,10 +60,21 @@ export default function Header() {
 			}
 		}
 	}
+	console.log('SESSION', sesson.data);
 
 	const handleMoreClose = () => {
 		setAnchorEl(null);
 	};
+
+	const handleLoginClick = () =>{
+		if (sesson.data) {
+			// Log out
+			signOut({ callbackUrl: '/' })
+		} else {
+			// // Log in
+			signIn('google', { callbackUrl: '/' })
+		}
+	}
 
 	return (
 	<React.Fragment>
@@ -86,6 +99,20 @@ export default function Header() {
 						</a>
 					</Box>
 					<Box className="header-nav-box" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexGrow: 1 }}>
+						<Button
+							style={{
+								color: 'black',
+								backgroundColor: 'gold',
+								fontSize: '1.1rem',
+								fontFamily: 'Montserrat, sans-serif',
+								fontWeight: 'bold',
+								margin: '0 10px',
+								borderRadius: '20px',
+								padding: '6px 16px',
+							}}
+							onClick={(e) => handleLoginClick()}
+						>{!sesson.data ? 'Log in':'Log out'}
+						</Button>
 						{ navItems.map((item) => (
 							<Button
 								key={item.key}

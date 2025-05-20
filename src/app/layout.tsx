@@ -5,6 +5,7 @@ import 'animate.css';
 import HeaderPage from "./(components)/header/page";
 import { Container } from "@mui/material";
 import Footer from '@/src/app/(components)/footer/footer';
+import {Providers} from '@/src/app/(components)/providers';
 
 const montserrat = Montserrat({
 	subsets: ["latin", "cyrillic"],
@@ -25,11 +26,13 @@ export default function RootLayout({
 	return (
 		<html lang="ru" className={montserrat.variable}>
 		<body>
-			<HeaderPage/>
-			<Container component="main" className={'mainContainer'} maxWidth={false}>
-				{children}
-			</Container>
-			< Footer />
+			<Providers>
+				<HeaderPage/>
+					<Container component="main" className={'mainContainer'} maxWidth={false}>
+						{children}
+					</Container>
+				< Footer />
+			</Providers>
 		</body>
 		</html>
 	);
