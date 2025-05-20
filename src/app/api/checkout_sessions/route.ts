@@ -8,11 +8,14 @@ export async function POST(request: NextRequest) {
     const origin = request.headers.get('origin') || 'http://localhost:3000';
     const body = await request.json();
     const value = Number(body.value);
+    const email = body.email;
+
     if (isNaN(value) || value <= 0) {
       return NextResponse.json({ error: 'Invalid value' }, { status: 400 });
     }
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
+      customer_email: email,
       line_items: [
         {
           price_data: {
@@ -32,6 +35,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ id: session.id });
   } catch (error) {
+    console.log('Error', error)
     return NextResponse.json(
         { error: 'Error creating checkout session' },
         { status: 500 }

@@ -6,7 +6,7 @@ import {
 	Container,
 	Toolbar
 } from '@mui/material';
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
 import imageLogo from '../../../../public/imageLogo.png';
 import Image from 'next/image';
 import {useSession, signOut, signIn } from 'next-auth/react';
@@ -15,8 +15,7 @@ export default function Header() {
 	const navItems = useMemo(() => [
 		{ key: 'curs', caption: 'Курс'},
 		{ key: 'coaching', caption: 'Coaching'},
-		{ key: 'free', caption: 'Бесплатно'},
-		{ key: 'package', caption: 'Пакеты'}
+		{ key: 'free', caption: 'Бесплатно'}
 	], []);
 
 	const sesson = useSession();
@@ -27,34 +26,38 @@ export default function Header() {
 	const handleNavItemClick = (item:string, e: React.MouseEvent)=> {
 		if (e) {
 			e.preventDefault();
-			// For other nav items, check if they match routes that need direct navigation
-			const routeItems = ['home', 'curs', 'coaching', 'free', 'connect'];
-			if (routeItems.includes(item)) {
-				window.location.href = `/#${item}`;
-				handleMoreClose();
-				// return;
-			} else {
-				window.location.href = `/${item}`;
-				handleMoreClose();
-				return;
-			}
 
-			// Default behavior: scroll to element with ID
-			const element = document.getElementById(item);
-			if (element) {
-				// Get the height of the AppBar
-				const appBar = document.querySelector('.appBarHeader') as HTMLElement;
-				const appBarHeight = appBar ? appBar.offsetHeight : 0;
+			// Only execute browser-specific code if window is defined (client-side)
+			if (typeof window !== 'undefined') {
+				// For other nav items, check if they match routes that need direct navigation
+				const routeItems = ['home', 'curs', 'coaching', 'free', 'connect'];
+				if (routeItems.includes(item)) {
+					window.location.href = `/#${item}`;
+					handleMoreClose();
+					// return;
+				} else {
+					window.location.href = `/${item}`;
+					handleMoreClose();
+					return;
+				}
 
-				// Calculate the element's position and adjust for the AppBar height
-				const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-				const offsetPosition = elementPosition - appBarHeight;
+				// Default behavior: scroll to element with ID
+				const element = document.getElementById(item);
+				if (element) {
+					// Get the height of the AppBar
+					const appBar = document.querySelector('.appBarHeader') as HTMLElement;
+					const appBarHeight = appBar ? appBar.offsetHeight : 0;
 
-				// Scroll to the adjusted position
-				window.scrollTo({
-					top: offsetPosition,
-					behavior: 'smooth'
-				});
+					// Calculate the element's position and adjust for the AppBar height
+					const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+					const offsetPosition = elementPosition - appBarHeight;
+
+					// Scroll to the adjusted position
+					window.scrollTo({
+						top: offsetPosition,
+						behavior: 'smooth'
+					});
+				}
 			}
 		}
 	}
@@ -72,12 +75,12 @@ export default function Header() {
 
 	return (
 	<React.Fragment>
-		<AppBar sx={{ top: 0, backgroundColor: 'white', marginBottom: '20px', zIndex: 1100 }}
+  <AppBar sx={{ top: 0, backgroundColor: 'white', zIndex: 1100, boxShadow: 'none' }}
 			        component='nav'
 			        position="fixed"
 			        className="appBarHeader" >
-			<Container fixed >
-				<Toolbar>
+			<Container fixed disableGutters>
+				<Toolbar disableGutters>
 					<Box sx={{ display: 'flex', alignItems: 'center' }}>
 						<a 
 							href="#home" 

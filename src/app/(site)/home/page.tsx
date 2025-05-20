@@ -2,12 +2,12 @@
 import {Container, Grid} from "@mui/material";
 import homeImage from "./images/homeImage.png";
 import backgroundImage from './images/la-new.jpg';
-import StripeButton from "../../(components)/button/stripeButton";
+import StripeButton from "../../(components)/buttons/stripeButton";
 import Image from 'next/image';
 
 export default function HomePage() {
 	return (
-		<Container component='div' maxWidth={false}
+		<Container component='div' maxWidth={false} disableGutters={true}
 		    className={'pageHome'}
 		 	id='home'
 		 	style={{

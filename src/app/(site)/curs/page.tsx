@@ -1,10 +1,13 @@
 'use client';
 import {Box, Grid, Paper} from "@mui/material";
-import Carousel from 'react-material-ui-carousel'
+import dynamic from 'next/dynamic';
 import homeImageCurs from "./images/homeImage.png";
 import imageExcelent from './images/excelent.png';
 import NewPrice from "../../(components)/new-price/new-price";
-import StripeButton from '@/src/app/(components)/button/stripeButton';
+import StripeButton from '@/src/app/(components)/buttons/stripeButton';
+
+// Import Carousel with SSR disabled to prevent hydration mismatch
+const Carousel = dynamic(() => import('react-material-ui-carousel'), { ssr: false });
 
 const reviewLists = [
 	{

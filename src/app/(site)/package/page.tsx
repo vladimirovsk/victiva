@@ -2,7 +2,7 @@
 import {Card, CardActions, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import img1 from './images/left1.png';
 import img2 from './images/vip.png';
-import StripeButton from "../../(components)/button/stripeButton";
+import StripeButton from "../../(components)/buttons/stripeButton";
 import ScrollAnimation from 'react-animate-on-scroll';
 import {useState} from 'react';
 

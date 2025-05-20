@@ -2,12 +2,12 @@ import {Box, Grid} from "@mui/material";
 import leftImage1 from "./images/left1.png";
 import vipImage from "./images/vip.png";
 import mv2 from "./images/mv2.gif";
-import  { EColorButton } from "../../(components)/button/buyCurs";
+import  { EColorButton } from "../../(components)/buttons/buyCurs";
 import Vik from "../../(components)/vic/vik";
 import NewPrice from "../../(components)/new-price/new-price";
 import MessageSvg from "../../(components)/message-svg/message-svg";
 import CoachingSection1 from '@/src/app/(site)/coaching/coaching-section1';
-import StripeButton from '@/src/app/(components)/button/stripeButton';
+import StripeButton from '@/src/app/(components)/buttons/stripeButton';
 
 
 

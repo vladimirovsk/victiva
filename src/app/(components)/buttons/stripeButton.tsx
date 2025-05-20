@@ -20,18 +20,22 @@ export default function StripeButton({
   bgColor = EColorButton.gold,
   fontColor = EColorButton.black
 }: StripeButtonProps) {
-  
+
   const handleStripeCheckout = async () => {
     const stripe = await stripePromise;
     const response = await fetch('/api/checkout_sessions', {
       headers: { 'Content-Type': 'application/json' },
       method: 'POST',
-      body: JSON.stringify({ value })
+      body: JSON.stringify({ 
+        value
+      })
     });
-    const session = await response.json();
+    const checkoutSession = await response.json();
+    console.log('checkoutSession', checkoutSession);
     if (stripe) {
-      await stripe.redirectToCheckout({ sessionId: session.id });
+      await stripe.redirectToCheckout({ sessionId: checkoutSession.id })
     }
+
   };
 
   return (
