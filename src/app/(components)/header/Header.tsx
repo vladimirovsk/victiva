@@ -27,8 +27,6 @@ export default function Header() {
 	const handleNavItemClick = (item:string, e: React.MouseEvent)=> {
 		if (e) {
 			e.preventDefault();
-
-
 			// For other nav items, check if they match routes that need direct navigation
 			const routeItems = ['home', 'curs', 'coaching', 'free', 'connect'];
 			if (routeItems.includes(item)) {
@@ -68,11 +66,9 @@ export default function Header() {
 
 	const handleLoginClick = () =>{
 		if (sesson.data) {
-			// Log out
-			signOut({ callbackUrl: '/' })
+			signOut({ callbackUrl: '/' }).catch(()=>{console.log('Error log out')})
 		} else {
-			// // Log in
-			signIn('google', { callbackUrl: '/' })
+			signIn(undefined, { callbackUrl: '/profile' }).catch((e)=>{console.log('Error log in', e?.stack) })
 		}
 	}
 
@@ -113,6 +109,21 @@ export default function Header() {
 							onClick={(e) => handleLoginClick()}
 						>{!sesson.data ? 'Log in':'Log out'}
 						</Button>
+						{ !sesson.data ? null : (
+							<Button
+								style={{
+									color: 'black',
+									backgroundColor: 'white',
+									fontSize: '1.1rem',
+									fontFamily: 'Montserrat, sans-serif',
+									fontWeight: 'bold',
+									margin: '0 10px',
+									borderRadius: '20px',
+									padding: '6px 16px',
+								}}
+								onClick={(e) => handleNavItemClick('profile', e)}
+							>Профиль</Button>
+						)}
 						{ navItems.map((item) => (
 							<Button
 								key={item.key}
