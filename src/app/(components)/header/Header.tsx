@@ -58,8 +58,6 @@ export default function Header() {
 			}
 		}
 	}
-	console.log('SESSION', sesson.data);
-
 	const handleMoreClose = () => {
 		setAnchorEl(null);
 	};
