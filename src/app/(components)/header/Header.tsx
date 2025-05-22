@@ -108,7 +108,7 @@ export default function Header() {
 								padding: '6px 16px',
 							}}
 							onClick={(e) => handleLoginClick()}
-						>{!sesson.data ? 'Log in':'Log out'}
+						>{!sesson.data ? 'Для членов':'Выход'}
 						</Button>
 						{ !sesson.data ? null : (
 							<Button
