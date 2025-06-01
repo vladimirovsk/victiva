@@ -15,124 +15,113 @@ export default function Coaching() {
 	return (
 		<div>
 			<CoachingSection1 />
-		<div id="coaching" className={'titlePageCoaching'}>
+		<div id="coaching" className={'titlePageCoaching'} style={{
+			margin: '4rem',
+		}}>
 			{/*1*************/}
 			<Grid container spacing={3} columns={12} direction="row"
 			      style={{
+				      border: '4px solid gold',
+				      borderRadius: '15px',
+				      backgroundColor: '#fffefe',
+				      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+				      padding: '2rem',
+				      marginTop: '5rem',
+				      marginLeft:  '0 3rem',
+				      marginRight:  '0 3rem',
 				      flexDirection: 'row',
 				      alignItems: 'center',
 				      justifyContent: 'center',
 				      textAlign: 'center'
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}} style={{
 					backgroundImage: `url(${leftImage1.src})`,
 					backgroundSize: '80%',
 					backgroundPosition: 'top center',
 					backgroundRepeat: 'no-repeat',
 					minHeight: '300px',
-					margin: '20px 0px 0px 0px',
 				}}>
 				</Grid>
-				<Grid size={{lg: 4, md: 6, sm: 12, xs: 12}} style={{
-					fontSize: '32px',
+				<Grid size={{lg: 8, md: 9, sm: 12, xs: 12}} style={{
+					fontSize: '26px',
 					fontWeight: 'bold',
 
 				}}>
-					<div style={{marginTop: '4rem'}}>ПАКЕТ ПРЕМИУМ</div>
+					<div style={{marginTop: '3rem'}}>ПАКЕТ ПРЕМИУМ</div>
 					<div>ГРУППОВОЙ ТРЕНИНГ</div>
 					<div style={{marginBottom: '4rem'}}>C <Vik/></div>
-				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 0, xs: 0}}></Grid>
-			</Grid>
-			<Grid container spacing={3} columns={12} direction="row"
-			      style={{
-				      alignItems: 'center',
-				      justifyContent: 'left',
-				      textAlign: 'left',
-				      fontSize: '1.3rem',
-				      margin: '20px 0',
-			      }}
-			>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
-					<div style={{marginBottom: '10px'}}>✔ 8 занятий в группе через Zoom c Vic на 1 месяц</div>
-					<div style={{marginBottom: '10px'}}>✔ 2 раза в неделю по 75 минут</div>
-					<div style={{marginBottom: '10px'}}>✔ Vic будет поправлять ваше произношение лично</div>
-					<div style={{marginBottom: '10px'}}>✔ вы будете слышать ошибки в произношение других участников и
-						это поможет вам быстро
+					<div style={{
+						marginBottom: '1rem',
+						fontSize: '24px',
+						fontWeight: '200',
+						alignItems: 'left',
+						textAlign: 'left',
+
+					}}>
+						<div style={{marginBottom: '10px'}}>✔ 8 занятий в группе через Zoom c Vic на 1 месяц</div>
+						<div style={{marginBottom: '10px'}}>✔ 2 раза в неделю по 75 минут</div>
+						<div style={{marginBottom: '10px'}}>✔ Vic будет поправлять ваше произношение лично</div>
+						<div style={{marginBottom: '10px'}}>✔ вы будете слышать ошибки в произношение других участников и
+							это поможет вам быстро
+						</div>
+						<div style={{marginBottom: '10px'}}>✔ улучшить ваше амеркианское произношение</div>
+						<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
 					</div>
-					<div style={{marginBottom: '10px'}}>✔ улучшить ваше амеркианское произношение</div>
-					<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
+					<StripeButton value={39700} caption='Записаться' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
+					<NewPrice oldParam={{value: 697, color: 'black'}} newParam={{value: 397, color: 'red'}}/>
+
 				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-			</Grid>
-			<Grid container spacing={0} style={{
-				alignItems: 'left',
-				justifyContent: 'center',
-				textAlign: 'center',
-				// margin: '0px 0'
-			}}>
-				<StripeButton value={39700} caption='Записаться' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
-				<NewPrice oldParam={{value: 697, color: 'black'}} newParam={{value: 397, color: 'red'}}/>
 			</Grid>
 			{/*2**************/}
 			<Grid container spacing={3} columns={12} direction="row"
 			      style={{
+				      border: '4px solid gold',
+				      borderRadius: '15px',
+				      backgroundColor: '#fffefe',
+				      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+				      padding: '2rem',
+				      marginTop: '5rem',
+				      marginLeft:  '0 3rem',
+				      marginRight:  '0 3rem',
 				      flexDirection: 'row',
 				      alignItems: 'center',
 				      justifyContent: 'center',
 				      textAlign: 'center'
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}} style={{
 					backgroundImage: `url(${vipImage.src})`,
 					backgroundSize: '80%',
 					backgroundPosition: 'top center',
 					backgroundRepeat: 'no-repeat',
 					minHeight: '300px',
 					margin: '20px 0px 0px 0px',
-				}}>
-				</Grid>
-				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}} style={{
-					fontSize: '32px',
+				}} />
+				<Grid size={{lg: 8, md: 9, sm: 12, xs: 12}} style={{
+					fontSize: '26px',
 					fontWeight: 'bold',
 
 				}}>
 					<div style={{marginTop: '4rem'}}>VIP</div>
 					<div>1 ЗАНЯТИЕ 1 НА 1</div>
 					<div style={{marginBottom: '4rem'}}>C <Vik/></div>
-				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-			</Grid>
-			<Grid container spacing={3} columns={12} direction="row"
-			      style={{
-				      alignItems: 'center',
-				      justifyContent: 'left',
-				      textAlign: 'left',
-				      fontSize: '1.3rem',
-				      margin: '20px 0',
-			      }}
-			>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
-					<div style={{marginBottom: '10px'}}>✔ 1 приватное занятие c Vic один на один через
-						Telegram, WhatsApp или Zoom
+					<div style={{
+						marginBottom: '1rem',
+						fontSize: '24px',
+						fontWeight: '200',
+						alignItems: 'left',
+						textAlign: 'left',
+					}}>
+						<div style={{marginBottom: '10px'}}>✔ 1 приватное занятие c Vic один на один через
+							Telegram, WhatsApp или Zoom
+						</div>
+						<div style={{marginBottom: '10px'}}>✔ Vic послушает вас, поправит ваши слабые звуки,
+							и расскажет как вам максимально эффективно
+							работать над вашим американским произношением
+						</div>
+						<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
 					</div>
-					<div style={{marginBottom: '10px'}}>✔ Vic послушает вас, поправит ваши слабые звуки,
-						и расскажет как вам максимально эффективно
-						работать над вашим американским произношением
-					</div>
-					<div style={{marginBottom: '10px'}}>✔ + видео курс "Говори Как Американцы За 8 Недель"</div>
-				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-			</Grid>
-			<Grid container spacing={0} style={{
-				alignItems: 'left',
-				justifyContent: 'center',
-				textAlign: 'center',
-				// margin: '0px 0'
-			}}>
 				<StripeButton value={40000} caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 				<h1 style={{
 					display: 'flex',
@@ -143,18 +132,35 @@ export default function Coaching() {
 					margin: '0',
 					padding: '0'
 				}}>$400</h1>
+				</Grid>
 			</Grid>
 			{/*3**************/}
 			<Grid container spacing={3} columns={12} direction="row"
 			      style={{
+				      border: '4px solid gold',
+				      borderRadius: '15px',
+				      backgroundColor: '#fffefe',
+				      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+				      padding: '2rem',
+				      marginTop: '5rem',
+				      marginLeft:  '0 3rem',
+				      marginRight:  '0 3rem',
+				      marginBottom: '5rem',
 				      flexDirection: 'row',
 				      alignItems: 'center',
 				      justifyContent: 'center',
 				      textAlign: 'center'
 			      }}
 			>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}} />
-				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}} style={{
+				<Grid size={{lg: 4, md: 3, sm: 12, xs: 12}} style={{
+					backgroundImage: `url(${vipImage.src})`,
+					backgroundSize: '80%',
+					backgroundPosition: 'top center',
+					backgroundRepeat: 'no-repeat',
+					minHeight: '300px',
+					margin: '20px 0px 0px 0px',
+				}} />
+				<Grid size={{lg: 8, md: 9, sm: 12, xs: 12}} style={{
 					fontSize: '32px',
 					fontWeight: 'bold',
 				}}>
@@ -162,20 +168,13 @@ export default function Coaching() {
 					<div style={{marginBottom: '1rem'}}>1 НА 1</div>
 					<div style={{marginBottom: '1rem'}}>C <Vik/></div>
 					<div style={{marginBottom: '4rem'}}>(произношение + грамматика, слова)</div>
-				</Grid>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-			</Grid>
-			<Grid container spacing={3} columns={12} direction="row"
-			      style={{
-				      alignItems: 'center',
-				      justifyContent: 'left',
-				      textAlign: 'left',
-				      fontSize: '1.3rem',
-				      margin: '20px 0',
-			      }}
-			>
-				<Grid size={{lg: 4, md: 3, sm: 1, xs: 1}}></Grid>
-				<Grid size={{lg: 4, md: 6, sm: 10, xs: 10}}>
+					<div style={{
+						marginBottom: '1rem',
+						fontSize: '24px',
+						fontWeight: '200',
+						alignItems: 'left',
+						textAlign: 'left',
+					}}>
 					<div style={{marginBottom: '1rem'}}>✔ 15 приватных занятий c Vic один на один через
 						Telegram, WhatsApp или Zoom
 					</div>
@@ -198,29 +197,18 @@ export default function Coaching() {
 						средний уровень, Vic доведет вас до продвинутого
 						уровня и выше
 					</div>
-				</Grid>
-				<Grid size={{lg: 3, md: 3, sm: 1, xs: 1}}></Grid>
-			</Grid>
-			<Grid container spacing={0} columns={12} direction="row" style={{
-				alignItems: 'left',
-				justifyContent: 'center',
-				textAlign: 'center',
-				// margin: '0px 0'
-			}}>
-				<Grid size={{lg: 3, md: 3, sm: 0, xs: 0}}></Grid>
-				<Grid size={{lg: 6, md: 6, sm: 12, xs: 12}}>
+					</div>
+					<StripeButton value={299700} caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 					<h1 style={{
-						display: 'flex',
+						// display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'center',
-						fontSize: '2.7rem',
+						fontSize: '2rem',
 						fontWeight: 'bold',
 						margin: '0',
 						padding: '0'
 					}}>$2997 (цена скоро поднимиться)</h1>
-					<StripeButton value={299700} caption='Забронировать' bgColor={EColorButton.black} fontColor={EColorButton.gold}/>
 				</Grid>
-				<Grid size={{lg: 3, md: 3, sm: 0, xs: 0}}></Grid>
 			</Grid>
 			{/*4**************/}
 			<Grid container spacing={0} columns={12} direction="row" style={{

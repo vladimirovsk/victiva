@@ -1,10 +1,11 @@
 'use client';
-import {Box, Grid, Paper} from "@mui/material";
+import {Box, Container, Grid, Paper} from "@mui/material";
 import dynamic from 'next/dynamic';
 import homeImageCurs from "./images/homeImage.png";
 import imageExcelent from './images/excelent.png';
 import NewPrice from "../../(components)/new-price/new-price";
 import StripeButton from '@/src/app/(components)/buttons/stripeButton';
+import backgroundImage from '@/src/app/(site)/home/images/la-new.jpg';
 
 // Import Carousel with SSR disabled to prevent hydration mismatch
 const Carousel = dynamic(() => import('react-material-ui-carousel'), { ssr: false });
@@ -27,6 +28,19 @@ const reviewLists = [
 
 export default function Curs() {
 	return (
+		<Container component='div' maxWidth={false} disableGutters={true}
+		           className={'pageHome'}
+		           id='home'
+		           style={{
+			           backgroundImage: `url(${backgroundImage.src})`,
+			           backgroundSize: 'cover',
+			           // height: '100vh',
+			           backgroundPosition: 'top center',
+			           backgroundRepeat: 'no-repeat',
+			           // backgroundColor: 'rgba(255, 255, 255, 0.8)',
+			           backgroundBlendMode: 'overlay',
+		           }}
+		>
 			<Grid id="curs" className={'titlePageCurs'}
 			      style={{
 					  display: 'flex',
@@ -36,7 +50,7 @@ export default function Curs() {
 				      textAlign: 'center'
 					}}
 					>
-				<h1>
+				<h1 style={{textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000'}}>
 				<div style={{ marginBottom: '10px' }}>ВИДЕО КУРС АМЕРИКАНСКОГО ПРОИЗНОШЕНИЯ</div>
 				<div style={{ marginBottom: '10px' }}>ГОВОРИ КАК АМЕРИКАНЦЫ ЗА 8 НЕДЕЛЬ</div>
 				<div style={{ marginBottom: '10px' }}>БАЗОВЫЙ ПАКЕТ</div>
@@ -203,5 +217,6 @@ export default function Curs() {
 					}} />
 				</Grid>
 			</Grid>
+		</Container>
 	)
 }
