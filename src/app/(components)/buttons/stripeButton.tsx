@@ -18,7 +18,6 @@ export default function StripeButton({
 }: StripeButtonProps) {
 
   const handleStripeCheckout = async () => {
-    // Показываем сообщение, что оплата отключена
     alert('Оплата временно отключена');
   };
 

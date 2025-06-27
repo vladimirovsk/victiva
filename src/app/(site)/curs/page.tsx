@@ -64,7 +64,7 @@ export default function Curs() {
 
 				<NewPrice oldParam={{value: 299, color: 'white'} } newParam={{value: 49, color: 'red'}} />
 				<StripeButton value={4900} />
-			<div className={'titlePageCursWhiteText'}>
+			<div className={'titlePageCursWhiteText'} style={{textShadow: '-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000'}}>
 				<div style={{ marginBottom: '10px' }}>"ЭТОТ ВИДЕО КУРС ПОМОГ МНЕ ЛУЧШЕ ЧЕМ</div>
 				<div style={{ marginBottom: '10px' }}>ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ С АМЕРИКАНСКИМИ УЧИТЕЛЯМИ ПРОИЗНОШЕНИЯ"</div>
 				<div style={{ marginBottom: '50px' }}>ГОВОРЯТ НЕКОТОРЫЕ УЧЕНИКИ</div>
